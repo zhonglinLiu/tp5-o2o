@@ -1,0 +1,190 @@
+<!--包含头部文件-->
+{include file="public/header" /}
+<div class="cl pd-5 bg-1 bk-gray mt-20"> <h1>商户入驻申请详情</h1></div>
+<article class="page-container">
+    <form class="form form-horizontal"  method="post" action="{:url('register/add')}">
+        基本信息：
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>商户名称：</label>
+            <div class="formControls col-xs-8 col-sm-3">
+                <input type="text" class="input-text" value="{$bis.name}" placeholder="" id="" name="name">
+            </div>
+        </div>
+
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>所属城市：</label>
+            <div class="formControls col-xs-8 col-sm-2">
+				<span class="select-box">
+				<select name="city_id" class="select cityId">
+					<option value="0">--请选择--</option>
+					{volist name="citys" id="city" }
+					<option value="{$city.id}" {if condition="$city.id eq $bis.city_id" }selected{/if} >{$city.name}</option>
+					{/volist}
+				</select>
+				</span>
+            </div>
+            {if condition="$bis.se_city neq ''"}
+            <div class="formControls col-xs-8 col-sm-2">
+				<span class="select-box">
+
+				<select name="se_city_id" class="select se_city_id">
+					<option value="{$bis.se_city_id}">{$bis.se_city.name}</option>
+				</select>
+
+				</span>
+            </div>
+            {/if}
+        </div>
+
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">缩略图：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <img id="upload_org_code_img" src="{$bis.logo}" width="150" height="150">
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">营业执照：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <img  id="upload_org_code_img_other" src="{$bis.licence_logo}" width="150" height="150">
+            </div>
+        </div>
+
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">商户介绍：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <script id="editor1"  type="text/plain" name="description" style="width:80%;height:300px;">{$bis.description}</script>
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">银行账号:</label>
+            <div class="formControls col-xs-8 col-sm-3">
+                <input type="text" class="input-text" value="{$bis.bank_info}" placeholder="" id="" name="bank_info">
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">开户行名称:</label>
+            <div class="formControls col-xs-8 col-sm-3">
+                <input type="text"  class="input-text" value="{$bis.bank_name}" placeholder="" id="" name="bank_name">
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">开户行姓名:</label>
+            <div class="formControls col-xs-8 col-sm-3">
+                <input type="text" class="input-text" value="{$bis.bank_user}" placeholder="" id="" name="bank_user">
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">法人:</label>
+            <div class="formControls col-xs-8 col-sm-3">
+                <input type="text" class="input-text" value="{$bis.faren}" placeholder="" id="" name="faren">
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">法人电话:</label>
+            <div class="formControls col-xs-8 col-sm-3">
+                <input type="text" class="input-text" value="{$bis.faren_tel}" placeholder="" id="" name="faren_tel">
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>邮箱：</label>
+            <div class="formControls col-xs-8 col-sm-3">
+                <input type="text" class="input-text" value="{$bis.email}" placeholder="" id="" name="email">
+            </div>
+        </div>
+        总店信息：
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">电话:</label>
+            <div class="formControls col-xs-8 col-sm-3">
+                <input type="text" class="input-text" value="{$bisLocation.tel}" placeholder="" id="" name="tel">
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">联系人:</label>
+            <div class="formControls col-xs-8 col-sm-3">
+                <input type="text" class="input-text" value="{$bisLocation.contact}" placeholder="" id="" name="contact">
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>所属分类：</label>
+            <div class="formControls col-xs-8 col-sm-3"> <span class="select-box">
+				<select name="category_id" class="select categoryId">
+					<option value="0">--请选择--</option>
+					{volist name='cates' id='cate'}
+					<option value="{$cate.id}" {if condition="$bisLocation.category_id eq $cate.id"}selected{/if} >{$cate.name}</option>
+					{/volist}
+				</select>
+				</span>
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">所属子类：</label>
+            <div class="formControls col-xs-8 col-sm-3 skin-minimal">
+                <div class="check-box se_category_id">
+                    {if condition='$bisLocation.categoryName neq "" '}
+                    {volist name="bisLocation.categoryName" id='v'}
+                    <span>{$v.name}</span>
+                    {/volist}
+                    {/if}
+                </div>
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">商户地址：</label>
+            <div class="formControls col-xs-8 col-sm-3">
+                <input type="text" class="input-text" value="{$bisLocation.api_address}" placeholder="" id="bis-address" name="address">
+            </div>
+            <a id="showposition"  class="btn btn-default radius ml-10 maptag">标注</a>
+            <br>
+            <div style="margin-left:200px" data-vertical="col-xs-8 col-sm-3" id="showmap">
+
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">营业时间:</label>
+            <div class="formControls col-xs-8 col-sm-3">
+                <input type="text" class="input-text" value="{$bisLocation.open_time}" placeholder="" id="" name="open_time">
+            </div>
+        </div>
+
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">门店简介：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <script id="editor"  type="text/plain" name="content" style="width:80%;height:300px;">{$bisLocation.content}</script>
+            </div>
+        </div>
+
+        账号信息：
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">用户名:</label>
+            <div class="formControls col-xs-8 col-sm-3">
+                <input type="text" class="input-text" value="{$bisAccount.username}" placeholder="" id="username" name="username">
+            </div>
+        </div>
+
+
+    </form>
+</article>
+
+<!--包含尾部文件-->
+{include file="public/footer" /}
+<script type="text/javascript" src="/__STATIC__/admin/hui/lib/ueditor/1.4.3/ueditor.config.js"></script>
+<script type="text/javascript" src="/__STATIC__/admin/hui/lib/ueditor/1.4.3/ueditor.all.min.js"> </script>
+<script type="text/javascript" src="/__STATIC__/admin/hui/lib/ueditor/1.4.3/lang/zh-cn/zh-cn.js"></script>
+<!--分配编辑器-->
+<script>
+    $(function(){
+        var ue = UE.getEditor('editor');
+        var ue1 = UE.getEditor('editor1');
+    });
+    var SCOPE = {
+        citys_url : '{:url("api/citys/getCitysByPid")}',
+        category_url:'{:url("api/category/getCategoryByPid")}',
+        ajax_upload_swf:"/__STATIC__/js/uploadify/uploadify.swf",
+        ajax_upload_image_url:"{:url('api/image/uploadImage')}",
+        check_username:'{:url("api/BisAccount/checkname")}',
+        show_position:'{:url("api/BisAccount/showposition")}',
+        showmap:'{:url("api/BisAccount/showmap")}',
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!--包含头部文件-->
+{include file="public/header" /}
+<div class="cl pd-5 bg-1 bk-gray mt-20">
+<h1></h1>
+{switch name='bis.status' }
+    {case value="0"}<h1> 入驻申请正在审核</h1> {/case}
+    {case value="-1"}<h1> 入驻申请审核失败 </h1>{/case}
+    {case value="0"}<h1> 入驻申请正在审核 </h1>{/case}
+    {default /} <h1>不存在该入驻申请情况</h1>
+
+{/switch}
+</div>
+{include file="public/footer" /}
+</body>
+</html>
