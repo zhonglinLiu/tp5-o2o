@@ -4,6 +4,12 @@ use think\Model;
 use think\Session;
 
 class Deal extends Base {
+    protected $type = [
+        'start_time'=>'timestamp:Y-m-d h:i',
+        'end_time'=>'timestamp:Y-m-d h:i',
+        'coupons_begin_time'=>'timestamp:Y-m-d h:i',
+        'coupons_end_time'=>'timestamp:Y-m-d h:i',
+    ];
     public function getGoodsByCategory(){
         $catesid = config('params.deal');
 

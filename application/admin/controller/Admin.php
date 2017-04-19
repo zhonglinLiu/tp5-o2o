@@ -66,9 +66,28 @@ class Admin extends Controller{
     }
 
     public function index(){
-
-        $users = model('Admin')->where(['status'=>['neq',-1]])->paginate();
-        return $this->fetch('',['users'=>$users]);
+         $sdata = [];
+         $data = [];
+        if(request()->isPost()){
+            $data = input('post.');
+            if(isset($data['begin_time']) && $data['begin_time']!=''){
+                $sdata['last_login_time'] = ['egt',strtotime($data['begin_time'])];
+            }
+            if(isset($data['end_time']) && $data['end_time']!=''){
+                $sdata['last_login_time'] = ['elt',strtotime($data['end_time'])];
+            }
+            if(isset($data['name']) && $data['name']!=''){
+                $sdata['username']=['like','%'.$data['name'].'%'];
+            }
+        }
+        $sdata['status'] = ['neq',-1];
+        $users = model('Admin')->where($sdata)->paginate();
+        return $this->fetch('',[
+            'users'=>$users,
+            'begin_time'=>isset($data['begin_time'])?htmlspecialchars($data['begin_time']):'',
+            'end_time'=>isset($data['end_time'])?htmlspecialchars($data['end_time']):'',
+            'name'=>isset($data['name'])?htmlspecialchars($data['name']):'',
+            ]);
     }
     public function edit(){
         return '待开发...';
@@ -82,14 +101,14 @@ class Admin extends Controller{
         if(request()->isAjax()){
             $data = input('post.');
             $validate = validate('Admin');
-            if($vaildate->scene('changepass')->check($data)){
+            if($validate->scene('changepass')->check($data)){
                 $admin = model('Admin')->where(['id'=>intval($data['id'])])->find();
                 $admin->password = md5($data['password'].$admin->code);
                 $rel = $admin->save();
                 if(!$rel){
-                    return $this->result(-1,'修改失败');
+                    return $this->result('修改失败',-1);
                 }
-                return $this->result(1,'修改成功');
+                return $this->result('修改成功',1);
                 
             }else{
                 return $this->result(-1,$this->getError());

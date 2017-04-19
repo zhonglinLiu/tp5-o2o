@@ -31,7 +31,7 @@ class Citys extends Base {
         $rel = $this->obj->add($data);
         if($rel){
             if(Cache::has('citys')){
-                Cache::rm('citys')
+                Cache::rm('citys');
             }
             $this->success('新增成功');
         }

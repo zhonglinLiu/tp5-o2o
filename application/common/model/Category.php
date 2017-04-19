@@ -26,7 +26,7 @@ class Category extends Base{
             'status'=>['neq',-1]
         ];
         $order = ['listorder'=>'desc'];
-        $rel = $this->where($data)->order($order)->paginate();
+        $rel = $this->where($data)->order($order)->paginate(3);
 //        echo $this->getLastSql();
         return $rel;
     }
