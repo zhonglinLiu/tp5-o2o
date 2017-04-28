@@ -29,7 +29,7 @@ CREATE TABLE `o2o_category`(
 )ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT  CHARSET=utf8;
 
 #城市表
-CREATE TABLE `o2o_city`(
+CREATE TABLE `o2o_citys`(
   `id` int(11) unsigned NOT NULL auto_increment,
   `name` VARCHAR(50) NOT NULL DEFAULT '' ,
   `uname` VARCHAR(50) NOT NULL DEFAULT '' COMMENT '城市英文名'  ,

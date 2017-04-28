@@ -40,11 +40,22 @@ class ComposerStaticInitcf8496ab79843065564a7786f28cbbac
         ),
     );
 
+    public static $prefixesPsr0 = array (
+        'R' => 
+        array (
+            'Raven_' => 
+            array (
+                0 => __DIR__ . '/..' . '/sentry/sentry/lib',
+            ),
+        ),
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInitcf8496ab79843065564a7786f28cbbac::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInitcf8496ab79843065564a7786f28cbbac::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitcf8496ab79843065564a7786f28cbbac::$prefixesPsr0;
 
         }, null, ClassLoader::class);
     }

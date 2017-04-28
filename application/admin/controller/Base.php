@@ -2,10 +2,19 @@
 namespace app\admin\controller;
 use think\Controller;
 use think\Session;
-
+use sentry;
 class Base extends Controller{
     public function _initialize()
     {
+        try {
+            $i = 1 / 0;
+        } catch (\Exception $e) {
+            // \sentry::captureException($e);
+            
+        }
+        
+        
+        exit;
         $user = Session::get('admin','admin');
         if(empty($user)){
             $this->redirect('admin/login');
@@ -16,6 +25,7 @@ class Base extends Controller{
             $isSuper = 0;
         }
         $this->assign('isSuper',$isSuper);
+
     }
 
     public function status(){
