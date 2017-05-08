@@ -1,0 +1,1133 @@
+[ 2017-04-11T15:27:22+08:00 ] 127.0.0.7 127.0.0.1 GET /
+[ log ] tp5.o2o.com/ [运行时间：2.799918s][吞吐率：0.36req/s] [内存消耗：5,017.86kb] [文件加载：60]
+[ info ] [ LANG ] F:\study\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.o2o.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6643005440; Huiskin=default',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT redis
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'type' => 'redis',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ F:\study\o2o\application\index\controller\Index.php ]
+[ info ] [ VIEW ] F:\study\o2o\public/../application/index\view\index\index.html [ array (
+  0 => 'citys',
+  1 => 'city',
+  2 => 'user',
+  3 => 'controller',
+  4 => 'cates',
+  5 => 'featured',
+  6 => 'title',
+  7 => 'goods',
+  8 => 'cateid',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-11T15:27:23+08:00 ] 127.0.0.7 127.0.0.1 GET /upload/20170326/e83605c415187b19db9d540e7dd5ee72.jpg
+[ log ] tp5.o2o.com/upload/20170326/e83605c415187b19db9d540e7dd5ee72.jpg [运行时间：0.340696s][吞吐率：2.94req/s] [内存消耗：2,138.08kb] [文件加载：37]
+[ info ] [ LANG ] F:\study\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => '20170326',
+    2 => 'e83605c415187b19db9d540e7dd5ee72.jpg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.o2o.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://tp5.o2o.com/',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6643005440; Huiskin=default; PHPSESSID=8bp41pocv8of4qc1c2pqi04r21',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-11T15:27:23+08:00 ] 127.0.0.7 127.0.0.1 GET /
+[ log ] tp5.o2o.com/ [运行时间：0.287956s][吞吐率：3.47req/s] [内存消耗：5,014.23kb] [文件加载：60]
+[ info ] [ LANG ] F:\study\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.o2o.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://tp5.o2o.com/',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6643005440; Huiskin=default; PHPSESSID=8bp41pocv8of4qc1c2pqi04r21',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT redis
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'type' => 'redis',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ F:\study\o2o\application\index\controller\Index.php ]
+[ info ] [ VIEW ] F:\study\o2o\public/../application/index\view\index\index.html [ array (
+  0 => 'citys',
+  1 => 'city',
+  2 => 'user',
+  3 => 'controller',
+  4 => 'cates',
+  5 => 'featured',
+  6 => 'title',
+  7 => 'goods',
+  8 => 'cateid',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-11T15:27:27+08:00 ] 127.0.0.7 127.0.0.1 GET /index/index/index.html?cityName=%E6%B1%9F%E8%A5%BF&city_id=4
+[ log ] tp5.o2o.com/index/index/index.html?cityName=%E6%B1%9F%E8%A5%BF&city_id=4 [运行时间：0.251666s][吞吐率：3.97req/s] [内存消耗：5,044.41kb] [文件加载：60]
+[ info ] [ LANG ] F:\study\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.o2o.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://tp5.o2o.com/',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6643005440; Huiskin=default; PHPSESSID=8bp41pocv8of4qc1c2pqi04r21',
+)
+[ info ] [ PARAM ] array (
+  'cityName' => '江西',
+  'city_id' => '4',
+)
+[ info ] [ CACHE ] INIT redis
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'type' => 'redis',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ F:\study\o2o\application\index\controller\Index.php ]
+[ info ] [ VIEW ] F:\study\o2o\public/../application/index\view\index\index.html [ array (
+  0 => 'citys',
+  1 => 'city',
+  2 => 'user',
+  3 => 'controller',
+  4 => 'cates',
+  5 => 'featured',
+  6 => 'title',
+  7 => 'goods',
+  8 => 'cateid',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-11T15:27:27+08:00 ] 127.0.0.7 127.0.0.1 GET /upload/20170326/e83605c415187b19db9d540e7dd5ee72.jpg
+[ log ] tp5.o2o.com/upload/20170326/e83605c415187b19db9d540e7dd5ee72.jpg [运行时间：0.164632s][吞吐率：6.07req/s] [内存消耗：2,138.09kb] [文件加载：37]
+[ info ] [ LANG ] F:\study\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => '20170326',
+    2 => 'e83605c415187b19db9d540e7dd5ee72.jpg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.o2o.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://tp5.o2o.com/index/index/index.html?cityName=%E6%B1%9F%E8%A5%BF&city_id=4',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6643005440; Huiskin=default; PHPSESSID=8bp41pocv8of4qc1c2pqi04r21',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-11T15:27:27+08:00 ] 127.0.0.7 127.0.0.1 GET /index/index/index.html?cityName=%E6%B1%9F%E8%A5%BF&city_id=4
+[ log ] tp5.o2o.com/index/index/index.html?cityName=%E6%B1%9F%E8%A5%BF&city_id=4 [运行时间：0.266903s][吞吐率：3.75req/s] [内存消耗：5,044.61kb] [文件加载：60]
+[ info ] [ LANG ] F:\study\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.o2o.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://tp5.o2o.com/index/index/index.html?cityName=%E6%B1%9F%E8%A5%BF&city_id=4',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6643005440; Huiskin=default; PHPSESSID=8bp41pocv8of4qc1c2pqi04r21',
+)
+[ info ] [ PARAM ] array (
+  'cityName' => '江西',
+  'city_id' => '4',
+)
+[ info ] [ CACHE ] INIT redis
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'type' => 'redis',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ F:\study\o2o\application\index\controller\Index.php ]
+[ info ] [ VIEW ] F:\study\o2o\public/../application/index\view\index\index.html [ array (
+  0 => 'citys',
+  1 => 'city',
+  2 => 'user',
+  3 => 'controller',
+  4 => 'cates',
+  5 => 'featured',
+  6 => 'title',
+  7 => 'goods',
+  8 => 'cateid',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-11T15:27:41+08:00 ] 127.0.0.7 127.0.0.1 GET /index.php/admin
+[ log ] tp5.o2o.com/index.php/admin [运行时间：0.189808s][吞吐率：5.27req/s] [内存消耗：2,781.98kb] [文件加载：46]
+[ info ] [ LANG ] F:\study\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.o2o.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6643005440; Huiskin=default; PHPSESSID=8bp41pocv8of4qc1c2pqi04r21',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'type' => 'redis',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-11T15:27:41+08:00 ] 127.0.0.7 127.0.0.1 GET /index.php/admin/admin/login.html
+[ log ] tp5.o2o.com/index.php/admin/admin/login.html [运行时间：0.105452s][吞吐率：9.48req/s] [内存消耗：2,772.66kb] [文件加载：44]
+[ info ] [ LANG ] F:\study\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.o2o.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6643005440; Huiskin=default; PHPSESSID=8bp41pocv8of4qc1c2pqi04r21',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Admin->login[ F:\study\o2o\application\admin\controller\Admin.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'type' => 'redis',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+)
+[ info ] [ VIEW ] F:\study\o2o\public/../application/admin\view\admin\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-11T15:27:42+08:00 ] 127.0.0.7 127.0.0.1 GET /index.php/captcha.html
+[ log ] tp5.o2o.com/index.php/captcha.html [运行时间：0.833948s][吞吐率：1.20req/s] [内存消耗：2,205.15kb] [文件加载：37]
+[ info ] [ LANG ] F:\study\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.o2o.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://tp5.o2o.com/index.php/admin/admin/login.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6643005440; Huiskin=default; PHPSESSID=8bp41pocv8of4qc1c2pqi04r21',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ F:\study\o2o\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'type' => 'redis',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-11T15:27:48+08:00 ] 127.0.0.7 127.0.0.1 POST /index.php/admin/admin/login.html
+[ log ] tp5.o2o.com/index.php/admin/admin/login.html [运行时间：0.205620s][吞吐率：4.86req/s] [内存消耗：2,752.73kb] [文件加载：46]
+[ info ] [ LANG ] F:\study\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.o2o.com',
+  'connection' => 'keep-alive',
+  'content-length' => '36',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.o2o.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://tp5.o2o.com/index.php/admin/admin/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6643005440; Huiskin=default; PHPSESSID=8bp41pocv8of4qc1c2pqi04r21',
+)
+[ info ] [ PARAM ] array (
+  'username' => '刘中林',
+)
+[ info ] [ RUN ] app\admin\controller\Admin->login[ F:\study\o2o\application\admin\controller\Admin.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'type' => 'redis',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: verifyCode[F:\study\o2o\application\admin\controller\Admin.php:20]
+
+---------------------------------------------------------------
+[ 2017-04-11T15:28:01+08:00 ] 127.0.0.7 127.0.0.1 POST /index.php/admin/admin/login.html
+[ log ] tp5.o2o.com/index.php/admin/admin/login.html [运行时间：0.440954s][吞吐率：2.27req/s] [内存消耗：4,768.59kb] [文件加载：58]
+[ info ] [ LANG ] F:\study\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.o2o.com',
+  'connection' => 'keep-alive',
+  'content-length' => '69',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.o2o.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://tp5.o2o.com/index.php/admin/admin/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6643005440; Huiskin=default; PHPSESSID=8bp41pocv8of4qc1c2pqi04r21',
+)
+[ info ] [ PARAM ] array (
+  'username' => '刘中林',
+  'password' => '123456',
+  'verifyCode' => '8tyva',
+)
+[ info ] [ RUN ] app\admin\controller\Admin->login[ F:\study\o2o\application\admin\controller\Admin.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'type' => 'redis',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT redis
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-11T15:28:03+08:00 ] 127.0.0.7 127.0.0.1 GET /index.php/admin/index/index.html
+[ log ] tp5.o2o.com/index.php/admin/index/index.html [运行时间：0.141617s][吞吐率：7.06req/s] [内存消耗：3,260.83kb] [文件加载：47]
+[ info ] [ LANG ] F:\study\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.o2o.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://tp5.o2o.com/index.php/admin/admin/login.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6643005440; Huiskin=default; PHPSESSID=8bp41pocv8of4qc1c2pqi04r21',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'type' => 'redis',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ F:\study\o2o\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] F:\study\o2o\public/../application/admin\view\index\index.html [ array (
+  0 => 'isSuper',
+  1 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-11T15:28:03+08:00 ] 127.0.0.7 127.0.0.1 GET /index.php/admin/index/welcome.html
+[ log ] tp5.o2o.com/index.php/admin/index/welcome.html [运行时间：0.107403s][吞吐率：9.31req/s] [内存消耗：3,145.36kb] [文件加载：45]
+[ info ] [ LANG ] F:\study\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.o2o.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://tp5.o2o.com/index.php/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6643005440; Huiskin=default; PHPSESSID=8bp41pocv8of4qc1c2pqi04r21',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'type' => 'redis',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ F:\study\o2o\application\admin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-11T15:28:06+08:00 ] 127.0.0.7 127.0.0.1 GET /index.php/admin/admin/index.html
+[ log ] tp5.o2o.com/index.php/admin/admin/index.html [运行时间：0.373160s][吞吐率：2.68req/s] [内存消耗：4,770.23kb] [文件加载：55]
+[ info ] [ LANG ] F:\study\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.o2o.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://tp5.o2o.com/index.php/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6643005440; Huiskin=default; PHPSESSID=8bp41pocv8of4qc1c2pqi04r21',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Admin->index[ F:\study\o2o\application\admin\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\study\o2o\public/../application/admin\view\admin\index.html [ array (
+  0 => 'users',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-11T15:28:07+08:00 ] 127.0.0.7 127.0.0.1 GET /index.php/admin/admin/add.html
+[ log ] tp5.o2o.com/index.php/admin/admin/add.html [运行时间：0.126803s][吞吐率：7.89req/s] [内存消耗：2,731.05kb] [文件加载：43]
+[ info ] [ LANG ] F:\study\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.o2o.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://tp5.o2o.com/index.php/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6643005440; Huiskin=default; PHPSESSID=8bp41pocv8of4qc1c2pqi04r21',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Admin->add[ F:\study\o2o\application\admin\controller\Admin.php ]
+[ info ] [ VIEW ] F:\study\o2o\public/../application/admin\view\admin\add.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-11T15:28:14+08:00 ] 127.0.0.7 127.0.0.1 GET /index.php/admin/order/index.html
+[ log ] tp5.o2o.com/index.php/admin/order/index.html [运行时间：0.288422s][吞吐率：3.47req/s] [内存消耗：4,799.72kb] [文件加载：56]
+[ info ] [ LANG ] F:\study\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'order',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.o2o.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://tp5.o2o.com/index.php/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6643005440; Huiskin=default; PHPSESSID=8bp41pocv8of4qc1c2pqi04r21',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Order->index[ F:\study\o2o\application\admin\controller\Order.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\study\o2o\public/../application/admin\view\order\index.html [ array (
+  0 => 'orders',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-11T15:28:34+08:00 ] 127.0.0.7 127.0.0.1 GET /index.php/admin/featured/add.html
+[ log ] tp5.o2o.com/index.php/admin/featured/add.html [运行时间：0.235941s][吞吐率：4.24req/s] [内存消耗：3,528.29kb] [文件加载：49]
+[ info ] [ LANG ] F:\study\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'featured',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.o2o.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://tp5.o2o.com/index.php/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6643005440; Huiskin=default; PHPSESSID=8bp41pocv8of4qc1c2pqi04r21',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'type' => 'redis',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Featured->add[ F:\study\o2o\application\admin\controller\Featured.php ]
+[ info ] [ VIEW ] F:\study\o2o\public/../application/admin\view\featured\add.html [ array (
+  0 => 'isSuper',
+  1 => 'featured',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-11T15:28:35+08:00 ] 127.0.0.7 127.0.0.1 GET /index.php/admin/featured/
+[ log ] tp5.o2o.com/index.php/admin/featured/ [运行时间：0.246141s][吞吐率：4.06req/s] [内存消耗：5,143.53kb] [文件加载：61]
+[ info ] [ LANG ] F:\study\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'featured',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.o2o.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'x-requested-with' => 'ShockwaveFlash/25.0.0.127',
+  'accept' => '*/*',
+  'referer' => 'http://tp5.o2o.com/index.php/admin/featured/add.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6643005440; Huiskin=default; PHPSESSID=8bp41pocv8of4qc1c2pqi04r21',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'type' => 'redis',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Featured->index[ F:\study\o2o\application\admin\controller\Featured.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\study\o2o\public/../application/admin\view\featured\index.html [ array (
+  0 => 'isSuper',
+  1 => 'type',
+  2 => 'featured',
+  3 => 'sreached',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-11T15:28:37+08:00 ] 127.0.0.7 127.0.0.1 GET /index.php/admin/deal/apply.html
+[ log ] tp5.o2o.com/index.php/admin/deal/apply.html [运行时间：0.492404s][吞吐率：2.03req/s] [内存消耗：5,080.66kb] [文件加载：61]
+[ info ] [ LANG ] F:\study\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'deal',
+    2 => 'apply',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.o2o.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://tp5.o2o.com/index.php/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6643005440; Huiskin=default; PHPSESSID=8bp41pocv8of4qc1c2pqi04r21',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'type' => 'redis',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Deal->apply[ F:\study\o2o\application\admin\controller\Deal.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\study\o2o\public/../application/admin\view\deal\index.html [ array (
+  0 => 'isSuper',
+  1 => 'deals',
+  2 => 'citys',
+  3 => 'cates',
+  4 => 'start_time',
+  5 => 'end_time',
+  6 => 'name',
+  7 => 'city_id',
+  8 => 'category_id',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-11T15:28:43+08:00 ] 127.0.0.7 127.0.0.1 GET /index.php/bis
+[ log ] tp5.o2o.com/index.php/bis [运行时间：0.209376s][吞吐率：4.78req/s] [内存消耗：3,276.89kb] [文件加载：50]
+[ info ] [ LANG ] F:\study\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bis',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.o2o.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6643005440; Huiskin=default; PHPSESSID=8bp41pocv8of4qc1c2pqi04r21',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'type' => 'redis',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-11T15:28:44+08:00 ] 127.0.0.7 127.0.0.1 GET /index.php/bis/login/index.html
+[ log ] tp5.o2o.com/index.php/bis/login/index.html [运行时间：0.142568s][吞吐率：7.01req/s] [内存消耗：3,243.55kb] [文件加载：48]
+[ info ] [ LANG ] F:\study\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bis',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.o2o.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6643005440; Huiskin=default; PHPSESSID=8bp41pocv8of4qc1c2pqi04r21',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\bis\controller\Login->index[ F:\study\o2o\application\bis\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'type' => 'redis',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+)
+[ info ] [ VIEW ] F:\study\o2o\public/../application/bis\view\login\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-11T15:28:50+08:00 ] 127.0.0.7 127.0.0.1 POST /index.php/bis/login/index.html
+[ log ] tp5.o2o.com/index.php/bis/login/index.html [运行时间：0.325454s][吞吐率：3.07req/s] [内存消耗：4,686.97kb] [文件加载：59]
+[ info ] [ LANG ] F:\study\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bis',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.o2o.com',
+  'connection' => 'keep-alive',
+  'content-length' => '28',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://tp5.o2o.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://tp5.o2o.com/index.php/bis/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6643005440; Huiskin=default; PHPSESSID=8bp41pocv8of4qc1c2pqi04r21',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'liu',
+  'password' => '123456',
+)
+[ info ] [ RUN ] app\bis\controller\Login->index[ F:\study\o2o\application\bis\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'type' => 'redis',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+)
+[ info ] [ VIEW ] F:\study\o2o\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-11T15:28:53+08:00 ] 127.0.0.7 127.0.0.1 GET /index.php/bis/index/index.html
+[ log ] tp5.o2o.com/index.php/bis/index/index.html [运行时间：0.118691s][吞吐率：8.43req/s] [内存消耗：3,332.77kb] [文件加载：51]
+[ info ] [ LANG ] F:\study\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bis',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.o2o.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://tp5.o2o.com/index.php/bis/login/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6643005440; Huiskin=default; PHPSESSID=8bp41pocv8of4qc1c2pqi04r21',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'type' => 'redis',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+)
+[ info ] [ RUN ] app\bis\controller\Index->index[ F:\study\o2o\application\bis\controller\Index.php ]
+[ info ] [ VIEW ] F:\study\o2o\public/../application/bis\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-11T15:28:58+08:00 ] 127.0.0.7 127.0.0.1 GET /index.php/bis/manager/index.html
+[ log ] tp5.o2o.com/index.php/bis/manager/index.html [运行时间：0.249330s][吞吐率：4.01req/s] [内存消耗：4,884.01kb] [文件加载：61]
+[ info ] [ LANG ] F:\study\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bis',
+    1 => 'manager',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.o2o.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://tp5.o2o.com/index.php/bis/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6643005440; Huiskin=default; PHPSESSID=8bp41pocv8of4qc1c2pqi04r21',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'type' => 'redis',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+)
+[ info ] [ RUN ] app\bis\controller\Manager->index[ F:\study\o2o\application\bis\controller\Manager.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\study\o2o\public/../application/bis\view\manager\index.html [ array (
+  0 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-11T15:29:01+08:00 ] 127.0.0.7 127.0.0.1 GET /index.php/bis/manager/add.html
+[ log ] tp5.o2o.com/index.php/bis/manager/add.html [运行时间：0.200116s][吞吐率：5.00req/s] [内存消耗：4,580.49kb] [文件加载：57]
+[ info ] [ LANG ] F:\study\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bis',
+    1 => 'manager',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.o2o.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://tp5.o2o.com/index.php/bis/manager/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6643005440; Huiskin=default; PHPSESSID=8bp41pocv8of4qc1c2pqi04r21',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'type' => 'redis',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+)
+[ info ] [ RUN ] app\bis\controller\Manager->add[ F:\study\o2o\application\bis\controller\Manager.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\study\o2o\public/../application/bis\view\manager\add.html [ array (
+  0 => 'model',
+  1 => 'flog',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-11T15:30:13+08:00 ] 127.0.0.7 127.0.0.1 GET /index.php/bis/index/index.html
+[ log ] tp5.o2o.com/index.php/bis/index/index.html [运行时间：0.135082s][吞吐率：7.40req/s] [内存消耗：3,332.70kb] [文件加载：51]
+[ info ] [ LANG ] F:\study\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bis',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.o2o.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://tp5.o2o.com/index.php/bis/login/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6643005440; Huiskin=default; PHPSESSID=8bp41pocv8of4qc1c2pqi04r21',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'type' => 'redis',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+)
+[ info ] [ RUN ] app\bis\controller\Index->index[ F:\study\o2o\application\bis\controller\Index.php ]
+[ info ] [ VIEW ] F:\study\o2o\public/../application/bis\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-11T15:30:15+08:00 ] 127.0.0.7 127.0.0.1 GET /index.php/bis/manager/index.html
+[ log ] tp5.o2o.com/index.php/bis/manager/index.html [运行时间：0.249746s][吞吐率：4.00req/s] [内存消耗：5,139.14kb] [文件加载：63]
+[ info ] [ LANG ] F:\study\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bis',
+    1 => 'manager',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.o2o.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://tp5.o2o.com/index.php/bis/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6643005440; Huiskin=default; PHPSESSID=8bp41pocv8of4qc1c2pqi04r21',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'type' => 'redis',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+)
+[ info ] [ RUN ] app\bis\controller\Manager->index[ F:\study\o2o\application\bis\controller\Manager.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\study\o2o\public/../application/bis\view\manager\index.html [ array (
+  0 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-11T15:30:16+08:00 ] 127.0.0.7 127.0.0.1 GET /index.php/bis/manager/add.html
+[ log ] tp5.o2o.com/index.php/bis/manager/add.html [运行时间：0.211064s][吞吐率：4.74req/s] [内存消耗：4,580.49kb] [文件加载：57]
+[ info ] [ LANG ] F:\study\o2o\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bis',
+    1 => 'manager',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.o2o.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://tp5.o2o.com/index.php/bis/manager/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=6643005440; Huiskin=default; PHPSESSID=8bp41pocv8of4qc1c2pqi04r21',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'module',
+  'type' => 'redis',
+  'auto_start' => true,
+  'host' => '127.0.0.1',
+  'port' => 6379,
+  'password' => '',
+)
+[ info ] [ RUN ] app\bis\controller\Manager->add[ F:\study\o2o\application\bis\controller\Manager.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\study\o2o\public/../application/bis\view\manager\add.html [ array (
+  0 => 'model',
+  1 => 'flog',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

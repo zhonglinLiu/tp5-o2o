@@ -1,0 +1,162 @@
+[ 2017-04-19T12:26:47+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.047089s ] mysql:dbname=mooc_o2o;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_category` [ RunTime:0.202069s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` = 0  AND `status` = 1 ORDER BY `listorder`  desc LIMIT 5 [ RunTime:0.121759s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` IN (6,2,1,5,8)  AND `status` = 1 ORDER BY `listorder`  desc [ RunTime:0.044164s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_featured` [ RunTime:0.163865s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_featured` WHERE  `status` = 1 [ RunTime:0.017682s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_deal` [ RunTime:0.101223s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_deal` WHERE  `status` = 1  AND `category_id` = 1  AND `end_time` > 1492576007  AND `city_id` = 5 ORDER BY `listorder`  desc,`id`  desc LIMIT 10 [ RunTime:0.053566s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  (  parent_id=1 ) LIMIT 5 [ RunTime:0.036916s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001471s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_deal` WHERE  `status` = 1  AND `category_id` = 2  AND `end_time` > 1492576007  AND `city_id` = 5 ORDER BY `listorder`  desc,`id`  desc LIMIT 10 [ RunTime:0.002341s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  (  parent_id=2 ) LIMIT 5 [ RunTime:0.011437s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.001675s ]
+
+---------------------------------------------------------------
+[ 2017-04-19T12:26:48+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.035062s ] mysql:dbname=mooc_o2o;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_featured` [ RunTime:0.050872s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_featured` WHERE  `status` = 1 [ RunTime:0.001100s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_deal` [ RunTime:0.027738s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_deal` WHERE  `status` = 1  AND `category_id` = 1  AND `end_time` > 1492576008  AND `city_id` = 5 ORDER BY `listorder`  desc,`id`  desc LIMIT 10 [ RunTime:0.001535s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_category` [ RunTime:0.194231s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  (  parent_id=1 ) LIMIT 5 [ RunTime:0.001432s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001440s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_deal` WHERE  `status` = 1  AND `category_id` = 2  AND `end_time` > 1492576008  AND `city_id` = 5 ORDER BY `listorder`  desc,`id`  desc LIMIT 10 [ RunTime:0.002544s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  (  parent_id=2 ) LIMIT 5 [ RunTime:0.001246s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.001137s ]
+
+---------------------------------------------------------------
+[ 2017-04-19T12:26:56+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.001978s ] mysql:dbname=mooc_o2o;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_featured` [ RunTime:0.025262s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_featured` WHERE  `status` = 1 [ RunTime:0.001082s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_deal` [ RunTime:0.025927s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_deal` WHERE  `status` = 1  AND `category_id` = 1  AND `end_time` > 1492576016  AND `city_id` = 5 ORDER BY `listorder`  desc,`id`  desc LIMIT 10 [ RunTime:0.001886s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_category` [ RunTime:0.029309s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  (  parent_id=1 ) LIMIT 5 [ RunTime:0.001645s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001082s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_deal` WHERE  `status` = 1  AND `category_id` = 2  AND `end_time` > 1492576016  AND `city_id` = 5 ORDER BY `listorder`  desc,`id`  desc LIMIT 10 [ RunTime:0.001643s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  (  parent_id=2 ) LIMIT 5 [ RunTime:0.001654s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.001112s ]
+
+---------------------------------------------------------------
+[ 2017-04-19T12:26:57+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.011860s ] mysql:dbname=mooc_o2o;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_featured` [ RunTime:0.025622s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_featured` WHERE  `status` = 1 [ RunTime:0.001168s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_deal` [ RunTime:0.022610s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_deal` WHERE  `status` = 1  AND `category_id` = 1  AND `end_time` > 1492576017  AND `city_id` = 5 ORDER BY `listorder`  desc,`id`  desc LIMIT 10 [ RunTime:0.001863s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_category` [ RunTime:0.022490s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  (  parent_id=1 ) LIMIT 5 [ RunTime:0.000828s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000942s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_deal` WHERE  `status` = 1  AND `category_id` = 2  AND `end_time` > 1492576017  AND `city_id` = 5 ORDER BY `listorder`  desc,`id`  desc LIMIT 10 [ RunTime:0.001349s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  (  parent_id=2 ) LIMIT 5 [ RunTime:0.000597s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000882s ]
+
+---------------------------------------------------------------
+[ 2017-04-19T12:36:23+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.014722s ] mysql:dbname=mooc_o2o;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_featured` [ RunTime:0.022146s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_featured` WHERE  `status` = 1 [ RunTime:0.001154s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_deal` [ RunTime:0.023451s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_deal` WHERE  `status` = 1  AND `category_id` = 1  AND `end_time` > 1492576583  AND `city_id` = 5 ORDER BY `listorder`  desc,`id`  desc LIMIT 10 [ RunTime:0.001355s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_category` [ RunTime:0.021918s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  (  parent_id=1 ) LIMIT 5 [ RunTime:0.000887s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001122s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_deal` WHERE  `status` = 1  AND `category_id` = 2  AND `end_time` > 1492576583  AND `city_id` = 5 ORDER BY `listorder`  desc,`id`  desc LIMIT 10 [ RunTime:0.001504s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  (  parent_id=2 ) LIMIT 5 [ RunTime:0.001030s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000977s ]
+
+---------------------------------------------------------------
+[ 2017-04-19T12:36:24+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.018360s ] mysql:dbname=mooc_o2o;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_featured` [ RunTime:0.021136s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_featured` WHERE  `status` = 1 [ RunTime:0.000778s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_deal` [ RunTime:0.019668s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_deal` WHERE  `status` = 1  AND `category_id` = 1  AND `end_time` > 1492576584  AND `city_id` = 5 ORDER BY `listorder`  desc,`id`  desc LIMIT 10 [ RunTime:0.000999s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_category` [ RunTime:0.018846s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  (  parent_id=1 ) LIMIT 5 [ RunTime:0.000672s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000543s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_deal` WHERE  `status` = 1  AND `category_id` = 2  AND `end_time` > 1492576584  AND `city_id` = 5 ORDER BY `listorder`  desc,`id`  desc LIMIT 10 [ RunTime:0.000892s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  (  parent_id=2 ) LIMIT 5 [ RunTime:0.000548s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000510s ]
+
+---------------------------------------------------------------
+[ 2017-04-19T12:36:32+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.013683s ] mysql:dbname=mooc_o2o;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_featured` [ RunTime:0.024515s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_featured` WHERE  `status` = 1 [ RunTime:0.000904s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_deal` [ RunTime:0.047420s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_deal` WHERE  `status` = 1  AND `category_id` = 1  AND `end_time` > 1492576592  AND `city_id` = 5 ORDER BY `listorder`  desc,`id`  desc LIMIT 10 [ RunTime:0.001593s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_category` [ RunTime:0.024371s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  (  parent_id=1 ) LIMIT 5 [ RunTime:0.000684s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000666s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_deal` WHERE  `status` = 1  AND `category_id` = 2  AND `end_time` > 1492576592  AND `city_id` = 5 ORDER BY `listorder`  desc,`id`  desc LIMIT 10 [ RunTime:0.000998s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  (  parent_id=2 ) LIMIT 5 [ RunTime:0.001058s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.001160s ]
+
+---------------------------------------------------------------
+[ 2017-04-19T12:36:33+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.020408s ] mysql:dbname=mooc_o2o;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_featured` [ RunTime:0.020815s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_featured` WHERE  `status` = 1 [ RunTime:0.000782s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_deal` [ RunTime:0.049767s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_deal` WHERE  `status` = 1  AND `category_id` = 1  AND `end_time` > 1492576593  AND `city_id` = 5 ORDER BY `listorder`  desc,`id`  desc LIMIT 10 [ RunTime:0.001438s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_category` [ RunTime:0.025306s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  (  parent_id=1 ) LIMIT 5 [ RunTime:0.000758s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000982s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_deal` WHERE  `status` = 1  AND `category_id` = 2  AND `end_time` > 1492576593  AND `city_id` = 5 ORDER BY `listorder`  desc,`id`  desc LIMIT 10 [ RunTime:0.001022s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  (  parent_id=2 ) LIMIT 5 [ RunTime:0.000659s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000699s ]
+
+---------------------------------------------------------------
+[ 2017-04-19T12:53:43+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.011867s ] mysql:dbname=mooc_o2o;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_featured` [ RunTime:0.023677s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_featured` WHERE  `status` = 1 [ RunTime:0.001251s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_deal` [ RunTime:0.023629s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_deal` WHERE  `status` = 1  AND `category_id` = 1  AND `end_time` > 1492577623  AND `city_id` = 5 ORDER BY `listorder`  desc,`id`  desc LIMIT 10 [ RunTime:0.001618s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_category` [ RunTime:0.022045s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  (  parent_id=1 ) LIMIT 5 [ RunTime:0.000796s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000847s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_deal` WHERE  `status` = 1  AND `category_id` = 2  AND `end_time` > 1492577623  AND `city_id` = 5 ORDER BY `listorder`  desc,`id`  desc LIMIT 10 [ RunTime:0.001395s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  (  parent_id=2 ) LIMIT 5 [ RunTime:0.000799s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000854s ]
+
+---------------------------------------------------------------
+[ 2017-04-19T12:53:44+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.027822s ] mysql:dbname=mooc_o2o;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_featured` [ RunTime:0.021336s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_featured` WHERE  `status` = 1 [ RunTime:0.000788s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_deal` [ RunTime:0.019298s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_deal` WHERE  `status` = 1  AND `category_id` = 1  AND `end_time` > 1492577623  AND `city_id` = 5 ORDER BY `listorder`  desc,`id`  desc LIMIT 10 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_category` [ RunTime:0.022424s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  (  parent_id=1 ) LIMIT 5 [ RunTime:0.000669s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000963s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_deal` WHERE  `status` = 1  AND `category_id` = 2  AND `end_time` > 1492577624  AND `city_id` = 5 ORDER BY `listorder`  desc,`id`  desc LIMIT 10 [ RunTime:0.000955s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  (  parent_id=2 ) LIMIT 5 [ RunTime:0.000593s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000551s ]
+
+---------------------------------------------------------------
+[ 2017-04-19T14:16:14+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.001752s ] mysql:dbname=mooc_o2o;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_admin` [ RunTime:0.026894s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_admin` WHERE  `username` = '刘中林' LIMIT 1 [ RunTime:0.138810s ]
+[ sql ] [ SQL ] UPDATE `o2o_admin`  SET `last_login_time`=1492582574,`update_time`=1492582574  WHERE  `id` = 1 [ RunTime:0.174509s ]
+
+---------------------------------------------------------------
+[ 2017-04-19T14:16:23+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015990s ] mysql:dbname=mooc_o2o;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_category` [ RunTime:0.038323s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `o2o_category` WHERE  `parent_id` = 0  AND `status` <> -1 LIMIT 1 [ RunTime:0.011150s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` = 0  AND `status` <> -1 ORDER BY `listorder`  desc LIMIT 0,3 [ RunTime:0.001271s ]
+
+---------------------------------------------------------------
+[ 2017-04-19T14:18:52+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.001596s ] mysql:dbname=mooc_o2o;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_category` [ RunTime:0.239332s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `o2o_category` WHERE  `parent_id` = 0  AND `status` <> -1 LIMIT 1 [ RunTime:0.001530s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` = 0  AND `status` <> -1 ORDER BY `listorder`  desc LIMIT 0,3 [ RunTime:0.001455s ]
+
+---------------------------------------------------------------
+[ 2017-04-19T14:19:05+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.021999s ] mysql:dbname=mooc_o2o;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_category` [ RunTime:0.025358s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `o2o_category` WHERE  `parent_id` = 0  AND `status` <> -1 LIMIT 1 [ RunTime:0.000883s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` = 0  AND `status` <> -1 ORDER BY `listorder`  desc LIMIT 0,3 [ RunTime:0.001784s ]
+
+---------------------------------------------------------------
+[ 2017-04-19T14:19:12+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.013271s ] mysql:dbname=mooc_o2o;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `o2o_category` [ RunTime:0.030260s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `o2o_category` WHERE  `parent_id` = 0  AND `status` <> -1 LIMIT 1 [ RunTime:0.001112s ]
+[ sql ] [ SQL ] SELECT * FROM `o2o_category` WHERE  `parent_id` = 0  AND `status` <> -1 ORDER BY `listorder`  desc LIMIT 0,3 [ RunTime:0.001626s ]
+
+---------------------------------------------------------------

@@ -57,7 +57,6 @@ $('.cityId').change(function () {
 $('.categoryId').change(function () {
     $data = {};
     $data.parent_id = $(this).val();
-    console.log($data);
     $.post(SCOPE.category_url,$data,function (d) {
         if(d.code==1){
             var html = '';

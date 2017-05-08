@@ -39,4 +39,8 @@ class Detail extends Base{
             'cateid'=>-1
         ]);
     }
+
+    public function map(){
+        return $this->fetch();
+    }
 }
