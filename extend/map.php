@@ -31,14 +31,4 @@ class map{
         $url = config('map.url').config('map.staticimage').'?'.http_build_query($data);
         return doCurl($url);
     }
-
-    public static function getUserPos($conf = []){
-        //http://api.map.baidu.com/location/ip?ak=请输入您的AK&coor=bd09ll
-        $data = [
-            'ak' => config('map.ak')
-        ];
-        $data = array_merge($data,$conf);
-        $url = config('map.url').'location/ip?'.http_build_query($data);
-        return doCurl($url);
-    }
 }

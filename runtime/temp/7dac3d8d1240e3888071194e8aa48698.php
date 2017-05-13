@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:61:"F:\study\o2o\public/../application/admin\view\user\index.html";i:1494684957;s:64:"F:\study\o2o\public/../application/admin\view\public\header.html";i:1490000720;s:64:"F:\study\o2o\public/../application/admin\view\public\footer.html";i:1490865711;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:61:"F:\study\o2o\public/../application/admin\view\user\index.html";i:1492055197;s:64:"F:\study\o2o\public/../application/admin\view\public\header.html";i:1490000720;s:64:"F:\study\o2o\public/../application/admin\view\public\footer.html";i:1490865711;}*/ ?>
 <!--包含头部文件-->
 <!DOCTYPE HTML>
 <html>
@@ -79,7 +79,7 @@
 					<td class="text-c"> <input name="listorder" value="<?php echo $v['listorder']; ?>" attr-id="<?php echo $v['id']; ?>" size="3" class="listorder" /></td>
 					<td><a href="<?php echo url('user/status',['status'=>$v->status==1?0:1,'id'=>$v['id']]); ?>" ><?php echo status($v['status']); ?></a></td>
 					<td class="td-manage">
-						<a style="text-decoration:none" class="ml-5" onClick="o2o_s_edit('用户详情','<?php echo url('user/edit',['id'=>$v['id']]); ?>')" href="javascript:;" title="查看"><i class="Hui-iconfont">&#xe6df;</i></a>
+						<a style="text-decoration:none" class="ml-5" onClick="o2o_s_edit('用户详情','<?php echo url('user/detail',['id'=>$v['id']]); ?>')" href="javascript:;" title="查看"><i class="Hui-iconfont">&#xe6df;</i></a>
 						<a style="text-decoration:none" class="ml-5" onClick="o2o_del('<?php echo url('user/status',['status'=>-1,'id'=>$v['id']]); ?>')" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a>
 					</td>
 				</tr>

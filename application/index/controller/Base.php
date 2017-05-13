@@ -18,7 +18,8 @@ class Base extends Controller{
         }else{
             $this->cates = $cates = $this->getCategorys();
             Cache::set('categorys',$cates,3600);
-        };
+        }
+        
         $features = model('Featured')->getFeatureds();
         $this->getHotCitys();
         $this->assign(['controller'=>strtolower(request()->controller())]);

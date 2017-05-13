@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:62:"F:\study\o2o\public/../application/index\view\index\index.html";i:1491749327;s:64:"F:\study\o2o\public/../application/index\view\public\header.html";i:1494142426;s:61:"F:\study\o2o\public/../application/index\view\public\nav.html";i:1491751010;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:62:"F:\study\o2o\public/../application/index\view\index\index.html";i:1491749327;s:64:"F:\study\o2o\public/../application/index\view\public\header.html";i:1490779098;s:61:"F:\study\o2o\public/../application/index\view\public\nav.html";i:1491751010;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +15,6 @@
     <script type="text/javascript" src="/__STATIC__/index/js/jquery-1.11.3.min.js"></script>
     <script src="/__STATIC__/js/dialog/layer.js"></script>
     <script src="/__STATIC__/js/dialog.js"></script>
-
 
 </head>
 
