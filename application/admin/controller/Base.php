@@ -6,15 +6,14 @@ use sentry;
 class Base extends Controller{
     public function _initialize()
     {
-        try {
+       /* try {
             $i = 1 / 0;
         } catch (\Exception $e) {
             // \sentry::captureException($e);
             
-        }
+        }*/
         
         
-        exit;
         $user = Session::get('admin','admin');
         if(empty($user)){
             $this->redirect('admin/login');

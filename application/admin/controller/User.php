@@ -30,8 +30,24 @@ class User extends Base{
 		}
 		return $this->fetch('index',['user'=>$user]);
 	}
-	public function detail(){
-		return;
+	public function edit(){
+		if(request()->isAjax()){
+			$post = input('post.');
+			if(!isset($post['password']) || $post['repass']==''){
+				unset($post['password']);
+				unset($post['repass']);
+			}
+			$validate = validate('User');
+			if($validate->scene('adminEdit')->check($post)){
+				/*$rel = model('User')->where(['id'=>$post['id']])->update($post);
+				if(!$rel){
+					$this->result('修改成功',1);
+				}*/
+			}else{
+				$this->result($validate->getError(),-1);
+			}
+			print_r($post);
+		}
 		$id = input('get.id');
 		if(is_null($id)){
 			$this->error('非法操作');

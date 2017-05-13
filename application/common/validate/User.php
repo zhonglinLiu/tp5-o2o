@@ -11,5 +11,6 @@ class User extends Validate{
     ];
     protected $scene = [
         'add'=>['username','password','email'],
+        'adminEdit'=>['username','repass'],
     ];
 }
