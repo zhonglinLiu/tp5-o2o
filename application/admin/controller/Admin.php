@@ -46,6 +46,10 @@ class Admin extends Controller{
     }
 
     public function add(){
+        $user = Session::get('admin','admin');
+        if(empty($user)){
+            $this->redirect('admin/login');
+        }
         if(request()->isPost()){
             $data = input('post.');
 
@@ -66,6 +70,10 @@ class Admin extends Controller{
     }
 
     public function index(){
+        $user = Session::get('admin','admin');
+        if(empty($user)){
+            $this->redirect('admin/login');
+        }
          $sdata = [];
          $data = [];
         if(request()->isPost()){

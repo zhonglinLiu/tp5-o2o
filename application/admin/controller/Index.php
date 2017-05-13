@@ -9,7 +9,6 @@ class Index extends Base
     public function index()
     {
         $user = Session::get('admin','admin');
-        
         return $this->fetch('',['user'=>$user]);
     }
      public function welcome()
