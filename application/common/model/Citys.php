@@ -2,6 +2,7 @@
 namespace app\common\model;
 use think\Model;
 class Citys extends Base{
+    
     public function getNormalTopCitys($parent_id){
         $data = [
             'parent_id' =>$parent_id,
@@ -22,4 +23,17 @@ class Citys extends Base{
     public function add($data){
         return $this->save($data);
     }
+
+    public function getCityById($id){
+        return $this->get($id);
+    }
+
+    public function getSeCityByCityPath($city_path){
+        $cids = explode(',',$city_path);
+        if(count($cids)>1){
+            return $cids[1];
+        }
+        return false;
+    }
+
 }

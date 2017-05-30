@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:62:"F:\study\o2o\public/../application/admin\view\admin\login.html";i:1494687469;s:64:"F:\study\o2o\public/../application/admin\view\public\header.html";i:1490000720;s:64:"F:\study\o2o\public/../application/admin\view\public\footer.html";i:1490865711;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:62:"F:\study\o2o\public/../application/admin\view\admin\login.html";i:1496129463;s:64:"F:\study\o2o\public/../application/admin\view\public\header.html";i:1490000720;s:64:"F:\study\o2o\public/../application/admin\view\public\footer.html";i:1490865711;}*/ ?>
 <!--包含头部文件-->
 <!DOCTYPE HTML>
 <html>
@@ -30,7 +30,7 @@
 <meta name="description" content="o2o平台">
 </head>
 <input type="hidden" id="TenantId" name="TenantId" value="" />
-<div class="header"><h1 style="text-align:center">嘘!后台登录</h1></div>
+<div class="header"><h1 style="text-align:center"><?php echo lang('Backstage'); ?><?php echo lang('login'); ?></h1></div>
 <div class="loginWraper">
 
     <div id="loginform" class="loginBox">
@@ -39,7 +39,7 @@
             <div class="row cl">
                 <label class="form-label col-xs-3"><i class="Hui-iconfont">&#xe60d;</i></label>
                 <div class="formControls col-xs-8">
-                    <input id="username" name="username" type="text" placeholder="账户" class="input-text size-L">
+                    <input id="" name="username" type="text" placeholder="账户" class="input-text size-L">
                 </div>
             </div>
             <div class="row cl">
@@ -49,7 +49,7 @@
                 </div>
             </div>
             <div class="row cl">
-                <label class="form-label col-xs-3">验证码</label>
+                <label class="form-label col-xs-3"><?php echo lang('Verification Code'); ?></label>
                 <div class="formControls col-xs-8">
                     <input type="text" name="verifyCode" class="input-text size-L" placeholder="请输入验证码">
                     <br/>

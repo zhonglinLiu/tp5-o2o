@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:61:"F:\study\o2o\public/../application/admin\view\user\index.html";i:1492055197;s:64:"F:\study\o2o\public/../application/admin\view\public\header.html";i:1490000720;s:64:"F:\study\o2o\public/../application/admin\view\public\footer.html";i:1490865711;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:61:"F:\study\o2o\public/../application/admin\view\user\index.html";i:1494687469;s:64:"F:\study\o2o\public/../application/admin\view\public\header.html";i:1490000720;s:64:"F:\study\o2o\public/../application/admin\view\public\footer.html";i:1490865711;}*/ ?>
 <!--包含头部文件-->
 <!DOCTYPE HTML>
 <html>

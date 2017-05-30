@@ -46,6 +46,11 @@ class Category extends Base{
         return $cates;
     }
 
+     public function getCatesByIds($ids){
+        $ids = trim(',',$ids);
+        return $this->all($ids);
+    }
+
 
 
 

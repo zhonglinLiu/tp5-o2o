@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:62:"F:\study\o2o\public/../application/admin\view\admin\index.html";i:1492061835;s:64:"F:\study\o2o\public/../application/admin\view\public\header.html";i:1490000720;s:64:"F:\study\o2o\public/../application/admin\view\public\footer.html";i:1490865711;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:62:"F:\study\o2o\public/../application/admin\view\admin\index.html";i:1495210644;s:64:"F:\study\o2o\public/../application/admin\view\public\header.html";i:1490000720;s:64:"F:\study\o2o\public/../application/admin\view\public\footer.html";i:1490865711;}*/ ?>
 <!--包含头部文件-->
 <!DOCTYPE HTML>
 <html>
@@ -77,7 +77,7 @@
 					<a style="text-decoration:none" onClick="<?php if($vo['status'] == 1): ?>member_stop(this,<?php echo $vo['id']; ?>)<?php else: ?>member_start(this,<?php echo $vo['id']; ?>)<?php endif; ?>" href="javascript:;" title="停用"><i class="Hui-iconfont">&#xe631;</i>
 					<?php endif; ?>
 					</a>
-					 <a title="编辑" href="javascript:;" onclick="member_edit('编辑','edit','4','','510')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a> <a style="text-decoration:none" class="ml-5" onClick="change_password('修改密码','<?php echo url('admin/changepass',['id'=>$vo['id']]); ?>','10001','600','270')" href="javascript:;" title="修改密码"><i class="Hui-iconfont">&#xe63f;</i>
+					 <a title="编辑" href="javascript:;" onclick="member_edit('编辑','<?php echo url('admin/edit',['id'=>$vo->id]); ?>','','','510')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a> <a style="text-decoration:none" class="ml-5" onClick="change_password('修改密码','<?php echo url('admin/changepass',['id'=>$vo['id']]); ?>','10001','600','270')" href="javascript:;" title="修改密码"><i class="Hui-iconfont">&#xe63f;</i>
 					 </a> 
 					 <?php if($vo['status'] != 4): ?>
 					 <a title="删除" href="javascript:;" onclick="member_del(this,'1')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6e2;</i>

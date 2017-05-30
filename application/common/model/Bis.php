@@ -12,4 +12,10 @@ class Bis extends Base {
         return $this->order($order)->where($data)->paginate();
     }
 
+    public function changeStatusById($id,$status){
+    	return $this->save(['status'=>$status],['id'=>$id]);
+    }
+
+    
+
 }

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:62:"F:\study\o2o\public/../application/admin\view\index\index.html";i:1491295355;s:64:"F:\study\o2o\public/../application/admin\view\public\header.html";i:1490000720;s:62:"F:\study\o2o\public/../application/admin\view\public\menu.html";i:1491471089;s:64:"F:\study\o2o\public/../application/admin\view\public\footer.html";i:1490865711;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:62:"F:\study\o2o\public/../application/admin\view\index\index.html";i:1495385191;s:64:"F:\study\o2o\public/../application/admin\view\public\header.html";i:1490000720;s:62:"F:\study\o2o\public/../application/admin\view\public\menu.html";i:1495384170;s:64:"F:\study\o2o\public/../application/admin\view\public\footer.html";i:1490865711;}*/ ?>
 ﻿<!--包含头部文件-->
 <!DOCTYPE HTML>
 <html>
@@ -45,9 +45,9 @@
 								<a title="我的信息" href="javascript:;" onclick="member_edit('个人信息','<?php echo url("admin/edit"); ?>','4','','510')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i>
 								</a>
 							</li>
-							<li><a href="#">切换账户</a></li>
-
-							<li><a href="<?php echo url('admin/logout'); ?>">退出</a></li>
+							<li><a href="#"><?php echo lang('Switch account'); ?></a></li>
+							<li><a href="<?php echo url('/admin/index',['lang'=>$lang]); ?>"><?php echo lang('Chinese/English'); ?></a></li>
+							<li><a href="<?php echo url('admin/logout'); ?>"><?php echo lang('logout'); ?></a></li>
 						</ul>
 					</li>
 					<li id="Hui-msg"> <a href="#" title="消息"><span class="badge badge-danger">1</span><i class="Hui-iconfont" style="font-size:18px">&#xe68a;</i></a> </li>
@@ -71,96 +71,96 @@
 	<input runat="server" id="divScrollValue" type="hidden" value="" />
 	<div class="menu_dropdown bk_2">
 		<dl id="menu-article">
-			<dt><i class="Hui-iconfont">&#xe616;</i> 分类管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+			<dt><i class="Hui-iconfont">&#xe616;</i><?php echo lang('Classified management'); ?><i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd>
 				<ul>
-					<li><a _href="<?php echo url('category/index'); ?>" data-title="生活服务分类" href="javascript:void(0)">生活服务分类</a></li>
+					<li><a _href="<?php echo url('category/index'); ?>" data-title="<?php echo lang('Life service classification'); ?>" href="javascript:void(0)"><?php echo lang('Life service classification'); ?></a></li>
 				</ul>
 			</dd>
 		</dl>
 		<dl id="menu-city">
-			<dt><i class="Hui-iconfont">&#xe616;</i> 城市管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+			<dt><i class="Hui-iconfont">&#xe616;</i> <?php echo lang('city management'); ?><i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd>
 				<ul>
-					<li><a _href="<?php echo url('citys/index'); ?>" data-title="城市分类" href="javascript:void(0)">城市分类</a></li>
+					<li><a _href="<?php echo url('citys/index'); ?>" data-title="<?php echo lang('city classification'); ?>" href="javascript:void(0)"><?php echo lang('city classification'); ?></a></li>
 				</ul>
 			</dd>
 		</dl>
 		<dl id="menu-area">
-			<dt><i class="Hui-iconfont">&#xe616;</i> 商圈管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+			<dt><i class="Hui-iconfont">&#xe616;</i> <?php echo lang('Merchant management'); ?><i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd>
 				<ul>
-					<li><a _href="<?php echo url('area/index'); ?>" data-title="商圈分类" href="javascript:void(0)">商圈分类</a></li>
+					<li><a _href="<?php echo url('area/index'); ?>" data-title="<?php echo lang('Shopping circle classification'); ?>" href="javascript:void(0)"><?php echo lang('Shopping circle classification'); ?></a></li>
 				</ul>
 			</dd>
 		</dl>
 		<dl id="menu-bis">
-			<dt><i class="Hui-iconfont">&#xe613;</i> 商家管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+			<dt><i class="Hui-iconfont">&#xe613;</i> <?php echo lang('Merchant management'); ?><i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd>
 				<ul>
-					<li><a _href="<?php echo url('bis/index'); ?>" data-title="商家列表" href="javascript:void(0)">商户列表</a></li>
-					<li><a _href="<?php echo url('bis/apply'); ?>" data-title="商家入驻申请" href="javascript:void(0)">商家入驻申请</a></li>
-					<li><a _href="<?php echo url('bis/dellist'); ?>" data-title="删除的商户" href="javascript:void(0)">删除的商户</a></li>
+					<li><a _href="<?php echo url('bis/index'); ?>" data-title="<?php echo lang('Merchant list'); ?>" href="javascript:void(0)"><?php echo lang('Merchant list'); ?></a></li>
+					<li><a _href="<?php echo url('bis/apply'); ?>" data-title="<?php echo lang('Business applications'); ?>" href="javascript:void(0)"><?php echo lang('Business applications'); ?></a></li>
+					<li><a _href="<?php echo url('bis/dellist'); ?>" data-title="<?php echo lang('Deleted merchant'); ?>" href="javascript:void(0)"><?php echo lang('Deleted merchant'); ?></a></li>
 				</ul>
 			</dd>
 		</dl>
 		<dl id="menu-store">
-			<dt><i class="Hui-iconfont">&#xe613;</i> 门店管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+			<dt><i class="Hui-iconfont">&#xe613;</i> <?php echo lang('Store management'); ?><i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd>
 				<ul>
-					<li><a _href="<?php echo url('BisLocation/index'); ?>" data-title="门店列表" href="javascript:void(0)">门店列表</a></li>
-					<li><a _href="<?php echo url('BisLocation/apply'); ?>" data-title="门店入驻申请" href="javascript:void(0)">门店入驻申请</a></li>
-					<li><a _href="<?php echo url('BisLocation/dellist'); ?>" data-title="删除的门店" href="javascript:void(0)">删除的门店</a></li>
+					<li><a _href="<?php echo url('BisLocation/index'); ?>" data-title="<?php echo lang('List of stores'); ?>" href="javascript:void(0)"><?php echo lang('List of stores'); ?></a></li>
+					<li><a _href="<?php echo url('BisLocation/apply'); ?>" data-title="<?php echo lang('Store applications'); ?>" href="javascript:void(0)"><?php echo lang('Store applications'); ?></a></li>
+					<li><a _href="<?php echo url('BisLocation/dellist'); ?>" data-title="<?php echo lang('Deleted stores'); ?>" href="javascript:void(0)"><?php echo lang('Deleted stores'); ?></a></li>
 				</ul>
 			</dd>
 		</dl>
 		<dl id="menu-product">
-			<dt><i class="Hui-iconfont">&#xe620;</i> 团购商品管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+			<dt><i class="Hui-iconfont">&#xe620;</i> <?php echo lang('Group merchandise management'); ?><i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd>
 				<ul>
-					<li><a _href="<?php echo url('deal/apply'); ?>" data-title="商家团购提交" href="javascript:void(0)">商家团购提交</a></li>
-					<li><a _href="<?php echo url('deal/index'); ?>" data-title="团购列表" href="javascript:void(0)">团购列表</a></li>
+					<li><a _href="<?php echo url('deal/apply'); ?>" data-title="<?php echo lang('Group purchase submission'); ?>" href="javascript:void(0)"><?php echo lang('Group purchase submission'); ?></a></li>
+					<li><a _href="<?php echo url('deal/index'); ?>" data-title="<?php echo lang('Buy list'); ?>" href="javascript:void(0)"><?php echo lang('Buy list'); ?></a></li>
 					
 				</ul>
 			</dd>
 		</dl>
 		<dl id="menu-pos">
-			<dt><i class="Hui-iconfont">&#xe620;</i> 推荐位管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+			<dt><i class="Hui-iconfont">&#xe620;</i> <?php echo lang('Recommended bit management'); ?><i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd>
 				<ul>
-					<li><a _href="<?php echo url('featured/add'); ?>" data-title="添加推荐位内容" href="javascript:void(0)">添加推荐位内容</a></li>
-					<li><a _href="<?php echo url('featured/index'); ?>" data-title="推荐位列表" href="javascript:void(0)">推荐位列表</a></li>
+					<li><a _href="<?php echo url('featured/add'); ?>" data-title="<?php echo lang('Add recommended bit content'); ?>" href="javascript:void(0)"><?php echo lang('Add recommended bit content'); ?></a></li>
+					<li><a _href="<?php echo url('featured/index'); ?>" data-title="<?php echo lang('Recommended bit list'); ?>" href="javascript:void(0)"><?php echo lang('Recommended bit list'); ?></a></li>
 					
 				</ul>
 			</dd>
 		</dl>
 		<dl id="menu-product">
-			<dt><i class="Hui-iconfont">&#xe620;</i> 订单管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+			<dt><i class="Hui-iconfont">&#xe620;</i> <?php echo lang('Order management'); ?><i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd>
 				<ul>
-					<li><a _href="<?php echo url('order/index'); ?>" data-title="订单列表" href="javascript:void(0)">订单列表</a></li>
-					<li><a _href="<?php echo url('order/del'); ?>" data-title="删除的订单" href="javascript:void(0)">删除的订单</a></li>
+					<li><a _href="<?php echo url('order/index'); ?>" data-title="订单列表" href="javascript:void(0)"><?php echo lang('Order list'); ?></a></li>
+					<li><a _href="<?php echo url('order/del'); ?>" data-title="删除的订单" href="javascript:void(0)"><?php echo lang('Deleted order'); ?></a></li>
 					
 				</ul>
 			</dd>
 		</dl>
 		<dl id="menu-member">
-			<dt><i class="Hui-iconfont">&#xe60d;</i> 会员管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+			<dt><i class="Hui-iconfont">&#xe60d;</i> <?php echo lang('Member management'); ?><i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd>
 				<ul>
-					<li><a _href="<?php echo url('user/index'); ?>" data-title="会员列表" href="javascript:;">会员列表</a></li>
-					<li><a _href="" data-title="删除的会员" href="javascript:;">删除的会员</a></li>
+					<li><a _href="<?php echo url('user/index'); ?>" data-title="<?php echo lang('Member list'); ?>" href="javascript:;"><?php echo lang('Member list'); ?></a></li>
+					<li><a _href="" data-title="<?php echo lang('Deleted member'); ?>" href="javascript:;"><?php echo lang('Deleted member'); ?></a></li>
 				
 				</ul>
 			</dd>
 		</dl>
 		<?php if($isSuper == 1): ?>
 		<dl id="menu-member">
-			<dt><i class="Hui-iconfont">&#xe60d;</i> 管理员管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+			<dt><i class="Hui-iconfont">&#xe60d;</i> <?php echo lang('Administrator management'); ?><i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd>
 				<ul>
-					<li><a _href="<?php echo url('admin/index'); ?>" data-title="管理员列表" href="javascript:;">管理员列表</a></li>
-					<li><a _href="<?php echo url('admin/add'); ?>" data-title="添加的管理员" href="javascript:;">添加的管理员</a></li>
+					<li><a _href="<?php echo url('admin/index'); ?>" data-title="<?php echo lang('managers'); ?>" href="javascript:;"><?php echo lang('managers'); ?></a></li>
+					<li><a _href="<?php echo url('admin/add'); ?>" data-title="<?php echo lang('Admin add'); ?>" href="javascript:;"><?php echo lang('Admin add'); ?></a></li>
 				
 				</ul>
 			</dd>

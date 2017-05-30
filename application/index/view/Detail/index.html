@@ -146,7 +146,7 @@
                                 <div class="shop-map">
                                     <div class="w-map">
                                         <!-- <img src="{:url('map/getStatusMap',['position'=>$position])}" /> -->
-                                    <iframe src="{:url('detail/map')}" style="border: none; overflow: hidden; " scrolling="no" width="400" height="400" ></iframe>
+                                    <iframe src="{:url('detail/map')}" style="border: none; overflow: hidden; " scrolling="no" width="400" height="400" ></iframe> 
                                             
                                            
                                         <a class="map-zoom">
@@ -218,7 +218,6 @@
     </div>
 </div>
 
-
 <script>
 
     //校验正整数
@@ -277,6 +276,9 @@
         var url = "{:url('order/index')}"+'?id='+id+'&count='+count;
         window.open(url);
     })
+
+
+    
 
     $('.map-zoom').click(function(){
          layer.open({

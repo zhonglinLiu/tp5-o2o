@@ -4,5 +4,5 @@ return [
     'port'=>25,
     'username'=>'17739650739@163.com',
     'password'=>'163com742253912',
-    'isHtml' =>false,
+    'isHtml' =>true,
 ];

@@ -25,27 +25,44 @@
 	</div>
 </body>
 </html>
+<script type="text/javascript" src="/__STATIC__/js/common.js" ></script>
 <script type="text/javascript">
-	// 百度地图API功能功能
-	var map = new BMap.Map("l-map");  
-	var point = new BMap.Point(116.331398,39.897445);
-	var start = "百度大厦";
-	var end = "北京邮电大学西门";
-	var routePolicy = [BMAP_TRANSIT_POLICY_LEAST_TIME,BMAP_TRANSIT_POLICY_LEAST_TRANSFER,BMAP_TRANSIT_POLICY_LEAST_WALKING,BMAP_TRANSIT_POLICY_AVOID_SUBWAYS];
-	var transit = new BMap.TransitRoute(map, {
-			renderOptions: {map: map},
-			policy: 0
+	
+	
+
+	var map = new BMap.Map("l-map"); 
+	var geolocation = new BMap.Geolocation();
+	var startPoint;
+	geolocation.getCurrentPosition(function(r){
+		if(this.getStatus() == BMAP_STATUS_SUCCESS){
+			var mk = new BMap.Marker(r.point);
+			map.addOverlay(mk);
+		    map.setCenter(mk);
+			map.centerAndZoom(startPoint, 15);
+			startPoint = new BMap.Point(r.point.lng,r.point.lat);
+
+			var end = "黄淮学院";
+			var routePolicy = [BMAP_TRANSIT_POLICY_LEAST_TIME,BMAP_TRANSIT_POLICY_LEAST_TRANSFER,BMAP_TRANSIT_POLICY_LEAST_WALKING,BMAP_TRANSIT_POLICY_AVOID_SUBWAYS];
+			var transit = new BMap.TransitRoute(map, {
+					renderOptions: {map: map},
+					policy: 0
+			});
+	        transit.search(startPoint,end);
+	        $("#result").click(function(){
+			map.clearOverlays(); 
+			var i=$("#driving_way select").val();
+			search(start,end,routePolicy[i]); 
+			function search(start,end,route){ 
+				transit.setPolicy(route);
+				transit.search(start,end);
+			}
 		});
-	transit.search(start,end);
-	$("#result").click(function(){
-		map.clearOverlays(); 
-		var i=$("#driving_way select").val();
-		search(start,end,routePolicy[i]); 
-		function search(start,end,route){ 
-			transit.setPolicy(route);
-			transit.search(start,end);
+			// routes();
 		}
-	});
+		else {
+			alert('failed'+this.getStatus());
+		}        
+	},{enableHighAccuracy: true})
 
 
 

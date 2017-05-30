@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:70:"F:\study\o2o\public/../application/admin\view\bis_location\detail.html";i:1490444419;s:64:"F:\study\o2o\public/../application/admin\view\public\header.html";i:1490000720;s:64:"F:\study\o2o\public/../application/admin\view\public\footer.html";i:1490865711;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:70:"F:\study\o2o\public/../application/admin\view\bis_location\detail.html";i:1496140000;s:64:"F:\study\o2o\public/../application/admin\view\public\header.html";i:1490000720;s:64:"F:\study\o2o\public/../application/admin\view\public\footer.html";i:1490865711;}*/ ?>
 <!--包含头部文件-->
 <!DOCTYPE HTML>
 <html>
@@ -49,23 +49,10 @@
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>所属城市：</label>
             <div class="formControls col-xs-8 col-sm-2">
-				<span class="select-box">
-				<select name="city_id" class="select cityId">
-					<option value="0">--请选择--</option>
-					<?php if(is_array($citys) || $citys instanceof \think\Collection || $citys instanceof \think\Paginator): $i = 0; $__LIST__ = $citys;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-					<option value="<?php echo $vo['id']; ?>" <?php if($vo['id'] == $store['city_id']): ?>selected<?php endif; ?> ><?php echo $vo['name']; ?></option>
-					<?php endforeach; endif; else: echo "" ;endif; ?>
-				</select>
-				</span>
+				<?php echo $store['city']['name']; ?>
             </div>
             <div class="formControls col-xs-8 col-sm-2">
-				<span class="select-box">
-                    <?php if($store['city_info'] != ""): ?>
-				<select name="se_city_id" class="select se_city_id">
-					<option value="0"><?php echo $store['city_info']['name']; ?></option>
-				</select>
-                    <?php endif; ?>
-				</span>
+				<?php echo $store['city_info']['name']; ?>
             </div>
         </div>
 
@@ -84,14 +71,8 @@
 
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>所属分类：</label>
-            <div class="formControls col-xs-8 col-sm-3"> <span class="select-box">
-				<select name="category_id" class="select categoryId">
-					<option value="0">--请选择--</option>
-					<?php if(is_array($categorys) || $categorys instanceof \think\Collection || $categorys instanceof \think\Paginator): $i = 0; $__LIST__ = $categorys;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-					<option value="<?php echo $store['category_name']['id']; ?>"><?php echo $store['category_name']['name']; ?></option>
-					<?php endforeach; endif; else: echo "" ;endif; ?>
-				</select>
-				</span>
+            <div class="formControls col-xs-8 col-sm-3">
+                <?php echo $store['category']['name']; ?>
             </div>
         </div>
         <div class="row cl">

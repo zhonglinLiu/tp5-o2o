@@ -2,6 +2,7 @@
 namespace app\admin\controller;
 use think\Controller;
 use think\Session;
+use think\Cookie;
 use sentry;
 class Base extends Controller{
     public function _initialize()
@@ -21,6 +22,13 @@ class Base extends Controller{
         }else{
             $isSuper = 0;
         }
+        $lang = Cookie::get('think_var');
+        if($lang=='zh-cn'){
+            $this->assign('lang','en-us');
+        }else{
+            $this->assign('lang','zh-cn');
+        }
+        
         $this->assign('isSuper',$isSuper);
 
     }

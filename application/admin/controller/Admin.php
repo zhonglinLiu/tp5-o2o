@@ -3,6 +3,7 @@ namespace app\admin\controller;
 use think\Controller;
 use think\Session;
 use think\Request;
+use think\Hook;
 use app\admin\controller\Base;
 class Admin extends Controller{
    /* public function _initialize(){
@@ -12,7 +13,8 @@ class Admin extends Controller{
         }
     }*/
     public function login(){
-        if(!empty(Session::get('admin','admin'))){
+        
+        if(model('Admin')->checkLogin()){
             $this->redirect('index/index');
         }
         if(request()->isAjax()){
@@ -20,7 +22,7 @@ class Admin extends Controller{
             if(!captcha_check($data['verifyCode'])){
                 return $this->result('验证码错误',-1);
             }
-            $vaildate = validate('Admin');
+           /* $vaildate = validate('Admin');
             if(!$vaildate->scene('login')->check($data)){
                 return $this->result($vaildate->getError(),-1);
             }
@@ -32,10 +34,11 @@ class Admin extends Controller{
                 return $this->result('账号或密码错误',-1);
             }
             $rel->last_login_ip = Request::instance()->ip();
-            $rel->last_login_time = time();
             $rel->save();
             Session::set('admin',$rel,'admin');
-            return $this->result('登录成功',1);
+
+            return $this->result('登录成功',1);*/
+            return model('Admin')->login($data);
         }
 
         return $this->fetch();
@@ -46,8 +49,7 @@ class Admin extends Controller{
     }
 
     public function add(){
-        $user = Session::get('admin','admin');
-        if(empty($user)){
+        if(!model('Admin')->checkLogin()){
             $this->redirect('admin/login');
         }
         if(request()->isPost()){
@@ -70,12 +72,11 @@ class Admin extends Controller{
     }
 
     public function index(){
-        $user = Session::get('admin','admin');
-        if(empty($user)){
+        if(model('Admin')->checkLogin()){
             $this->redirect('admin/login');
         }
-         $sdata = [];
-         $data = [];
+        $sdata = [];
+        $data = [];
         if(request()->isPost()){
             $data = input('post.');
             if(isset($data['begin_time']) && $data['begin_time']!=''){
@@ -98,7 +99,25 @@ class Admin extends Controller{
             ]);
     }
     public function edit(){
-        return '待开发...';
+        if(request()->isAjax()){
+            $post = input('post.');
+            $vaildate = vaildate('Admin');
+            if(!$validate->scene('edit')->check($post)){
+                return $this->result($vaildate->getError(),-1);
+            }else{
+                $rel = model('Admin')->save($post,['id'=>intval($post['id'])]);
+                if(!$rel){
+                    return $this->result('修改失败',-1);
+                }
+                return $this->result('修改成功',1);
+            }
+        }
+        $id = input('get.id');
+        if(empty($id)){
+            return '参数错误';
+        }
+        $admin = model('Admin')->get($id);
+        return $this->fetch('',['admin'=>$admin]);
     }
 
     public function show(){

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:63:"F:\study\o2o\public/../application/index\view\detail\index.html";i:1494145396;s:64:"F:\study\o2o\public/../application/index\view\public\header.html";i:1494142426;s:61:"F:\study\o2o\public/../application/index\view\public\nav.html";i:1491751010;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:63:"F:\study\o2o\public/../application/index\view\detail\index.html";i:1494743608;s:64:"F:\study\o2o\public/../application/index\view\public\header.html";i:1494142426;s:61:"F:\study\o2o\public/../application/index\view\public\nav.html";i:1491751010;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -243,7 +243,7 @@
                                 <div class="shop-map">
                                     <div class="w-map">
                                         <!-- <img src="<?php echo url('map/getStatusMap',['position'=>$position]); ?>" /> -->
-                                    <iframe src="<?php echo url('detail/map'); ?>" style="border: none; overflow: hidden; " scrolling="no" width="400" height="400" ></iframe>
+                                    <iframe src="<?php echo url('detail/map'); ?>" style="border: none; overflow: hidden; " scrolling="no" width="400" height="400" ></iframe> 
                                             
                                            
                                         <a class="map-zoom">
@@ -315,7 +315,6 @@
     </div>
 </div>
 
-
 <script>
 
     //校验正整数
@@ -374,6 +373,9 @@
         var url = "<?php echo url('order/index'); ?>"+'?id='+id+'&count='+count;
         window.open(url);
     })
+
+
+    
 
     $('.map-zoom').click(function(){
          layer.open({

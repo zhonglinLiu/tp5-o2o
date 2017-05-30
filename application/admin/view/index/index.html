@@ -16,9 +16,9 @@
 								<a title="我的信息" href="javascript:;" onclick="member_edit('个人信息','{:url("admin/edit")}','4','','510')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i>
 								</a>
 							</li>
-							<li><a href="#">切换账户</a></li>
-
-							<li><a href="{:url('admin/logout')}">退出</a></li>
+							<li><a href="#">{:lang('Switch account')}</a></li>
+							<li><a href="{:url('/admin/index',['lang'=>$lang])}">{:lang('Chinese/English')}</a></li>
+							<li><a href="{:url('admin/logout')}">{:lang('logout')}</a></li>
 						</ul>
 					</li>
 					<li id="Hui-msg"> <a href="#" title="消息"><span class="badge badge-danger">1</span><i class="Hui-iconfont" style="font-size:18px">&#xe68a;</i></a> </li>

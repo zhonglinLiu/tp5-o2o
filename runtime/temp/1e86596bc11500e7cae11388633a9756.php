@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:69:"F:\study\o2o\public/../application/admin\view\bis_location\index.html";i:1490614280;s:64:"F:\study\o2o\public/../application/admin\view\public\header.html";i:1490000720;s:64:"F:\study\o2o\public/../application/admin\view\public\footer.html";i:1490865711;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:69:"F:\study\o2o\public/../application/admin\view\bis_location\index.html";i:1496138769;s:64:"F:\study\o2o\public/../application/admin\view\public\header.html";i:1490000720;s:64:"F:\study\o2o\public/../application/admin\view\public\footer.html";i:1490865711;}*/ ?>
 <!--包含头部文件-->
 <!DOCTYPE HTML>
 <html>
@@ -54,7 +54,7 @@
 			<tr class="text-c">
 				<td><?php echo $v['id']; ?></td>
 				<td><?php echo $v['name']; ?></td>
-				<td><a href="javascript:;" onClick="o2o_s_edit('门店详情','<?php echo url('bis/detail',['id'=>$v['bis_id']]); ?>','',300)"><?php echo $v['bis_name']; ?></a></td>
+				<td><a href="javascript:;" onClick="o2o_s_edit('门店详情','<?php echo url('bis/detail',['id'=>$v['bis_id']]); ?>','',300)"><?php echo $v['bis']['name']; ?></a></td>
 				<td><?php if($v['is_main'] == 1): ?>是<?php else: ?>否<?php endif; ?></td>
 				<td class="text-c"><?php echo $v['contact']; ?></td>
 				<td class="text-c"><?php echo $v['tel']; ?></td>

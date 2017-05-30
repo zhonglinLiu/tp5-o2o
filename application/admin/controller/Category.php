@@ -38,6 +38,7 @@ class Category extends Base
             }
             return $this->error('修改失败');
         }
+        
         $rel = $this->obj->add($data);
         if($rel){
             if(Cache::has('categorys')){

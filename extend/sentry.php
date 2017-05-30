@@ -2,6 +2,9 @@
 use Raven\RavenAutoloader;
 class sentry{
 	public static $client = null;
+	protected function __construct(){
+
+	}
 	public static function init(){
 		if(is_null(self::$client)){
 			RavenAutoloader::register();
@@ -16,7 +19,6 @@ class sentry{
 	public static function captureMessage($msg=null){
 		self::init();
 		self::$client->captureMessage($msg);
-	
 		
 	}
 

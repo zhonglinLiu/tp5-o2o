@@ -25,7 +25,7 @@
 				<tr class="text-c">
 					<td>{$v.id}</td>
 					<td>{$v.name}</td>
-					<td><a href="javascript:;" onClick="o2o_s_edit('商户详情','{:url('bis/detail',['id'=>$v.bis_id])}','',300)">{$v.bis_name}</a></td>
+					<td><a href="javascript:;" onClick="o2o_s_edit('商户详情','{:url('bis/detail',['id'=>$v.bis_id])}','',300)">{$v.bis.name}</a></td>
 					<td>{if condition="$v.is_main eq 1"}是{else/}否{/if}</td>
 					<td class="text-c">{$v.contact}</td>
 					<td class="text-c">{$v.tel}</td>

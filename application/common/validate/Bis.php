@@ -22,7 +22,7 @@ class Bis extends Validate{
         ['password','require','密码不能为空'],
         ['description','require','商户描述不能为空'],
         ['status','number|in:-1,0,1,2'],
-        ['id','number']
+        ['id','require','id不能为空']
     ];
     protected $scene =[
         'add'=>['name','city_id','logo','licence_logo','bank_info','bank_name','bank_user','faren','faren_tel',
