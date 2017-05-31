@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:63:"F:\study\o2o\public/../application/bis\view\register\index.html";i:1490283308;s:62:"F:\study\o2o\public/../application/bis\view\public\header.html";i:1490263172;s:62:"F:\study\o2o\public/../application/bis\view\public\footer.html";i:1490266032;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:63:"F:\study\o2o\public/../application/bis\view\register\index.html";i:1496219693;s:62:"F:\study\o2o\public/../application/bis\view\public\header.html";i:1496219683;s:62:"F:\study\o2o\public/../application/bis\view\public\footer.html";i:1496219678;}*/ ?>
 <!--包含头部文件-->
 <!DOCTYPE HTML>
 <html>
@@ -15,14 +15,14 @@
 <script type="text/javascript" src="lib/respond.min.js"></script>
 <script type="text/javascript" src="lib/PIE_IE678.js"></script>
 <![endif]-->
-<link rel="stylesheet" type="text/css" href="/__STATIC__/admin/hui/static/h-ui/css/H-ui.min.css" />
-<link rel="stylesheet" type="text/css" href="/__STATIC__/admin/hui/static/h-ui.admin/css/H-ui.admin.css" />
-<link rel="stylesheet" type="text/css" href="/__STATIC__/admin/hui/lib/Hui-iconfont/1.0.7/iconfont.css" />
-<link rel="stylesheet" type="text/css" href="/__STATIC__/admin/hui/lib/icheck/icheck.css" />
-<link rel="stylesheet" type="text/css" href="/__STATIC__/admin/hui/static/h-ui.admin/skin/default/skin.css" id="skin" />
-<link rel="stylesheet" type="text/css" href="/__STATIC__/admin/hui/static/h-ui.admin/css/style.css" />
-  <link rel="stylesheet" type="text/css" href="/__STATIC__/admin/css/common.css" />
-  <link rel="stylesheet" type="text/css" href="/__STATIC__/js/uploadify/uploadify.css" />
+<link rel="stylesheet" type="text/css" href="__STATIC__/admin/hui/static/h-ui/css/H-ui.min.css" />
+<link rel="stylesheet" type="text/css" href="__STATIC__/admin/hui/static/h-ui.admin/css/H-ui.admin.css" />
+<link rel="stylesheet" type="text/css" href="__STATIC__/admin/hui/lib/Hui-iconfont/1.0.7/iconfont.css" />
+<link rel="stylesheet" type="text/css" href="__STATIC__/admin/hui/lib/icheck/icheck.css" />
+<link rel="stylesheet" type="text/css" href="__STATIC__/admin/hui/static/h-ui.admin/skin/default/skin.css" id="skin" />
+<link rel="stylesheet" type="text/css" href="__STATIC__/admin/hui/static/h-ui.admin/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="__STATIC__/admin/css/common.css" />
+  <link rel="stylesheet" type="text/css" href="__STATIC__/js/uploadify/uploadify.css" />
 <!--[if IE 6]>
 <script type="text/javascript" src="http://lib.h-ui.net/DD_belatedPNG_0.0.8a-min.js" ></script>
 <script>DD_belatedPNG.fix('*');</script>
@@ -203,22 +203,22 @@
 </article>
 
 <!--包含尾部文件-->
-<script type="text/javascript" src="/__STATIC__/admin/hui/lib/jquery/1.9.1/jquery.min.js"></script>
-<script type="text/javascript" src="/__STATIC__/admin/hui/lib/layer/2.1/layer.js"></script>
-<script type="text/javascript" src="/__STATIC__/admin/hui/lib/My97DatePicker/WdatePicker.js"></script>
-<script type="text/javascript" src="/__STATIC__/admin/hui/lib/jquery.validation/1.14.0/jquery.validate.min.js"></script>
-<script type="text/javascript" src="/__STATIC__/admin/hui/lib/jquery.validation/1.14.0/validate-methods.js"></script>
-<script type="text/javascript" src="/__STATIC__/admin/hui/lib/jquery.validation/1.14.0/messages_zh.min.js"></script>
-<script type="text/javascript" src="/__STATIC__/admin/hui/static/h-ui/js/H-ui.js"></script>
-<script type="text/javascript" src="/__STATIC__/admin/hui/static/h-ui.admin/js/H-ui.admin.js"></script>
-<script type="text/javascript" src="/__STATIC__/js/common.js"></script>
-<script type="text/javascript" src="/__STATIC__/js/uploadify/jquery.uploadify.js"></script>
-<script type="text/javascript" src="/__STATIC__/js/image.js"></script>
-<script type="text/javascript" src="/__STATIC__/js/dialog.js"></script>
+<script type="text/javascript" src="__STATIC__/admin/hui/lib/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="__STATIC__/admin/hui/lib/layer/2.1/layer.js"></script>
+<script type="text/javascript" src="__STATIC__/admin/hui/lib/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="__STATIC__/admin/hui/lib/jquery.validation/1.14.0/jquery.validate.min.js"></script>
+<script type="text/javascript" src="__STATIC__/admin/hui/lib/jquery.validation/1.14.0/validate-methods.js"></script>
+<script type="text/javascript" src="__STATIC__/admin/hui/lib/jquery.validation/1.14.0/messages_zh.min.js"></script>
+<script type="text/javascript" src="__STATIC__/admin/hui/static/h-ui/js/H-ui.js"></script>
+<script type="text/javascript" src="__STATIC__/admin/hui/static/h-ui.admin/js/H-ui.admin.js"></script>
+<script type="text/javascript" src="__STATIC__/js/common.js"></script>
+<script type="text/javascript" src="__STATIC__/js/uploadify/jquery.uploadify.js"></script>
+<script type="text/javascript" src="__STATIC__/js/image.js"></script>
+<script type="text/javascript" src="__STATIC__/js/dialog.js"></script>
 
-<script type="text/javascript" src="/__STATIC__/admin/hui/lib/ueditor/1.4.3/ueditor.config.js"></script>
-<script type="text/javascript" src="/__STATIC__/admin/hui/lib/ueditor/1.4.3/ueditor.all.min.js"> </script>
-<script type="text/javascript" src="/__STATIC__/admin/hui/lib/ueditor/1.4.3/lang/zh-cn/zh-cn.js"></script>
+<script type="text/javascript" src="__STATIC__/admin/hui/lib/ueditor/1.4.3/ueditor.config.js"></script>
+<script type="text/javascript" src="__STATIC__/admin/hui/lib/ueditor/1.4.3/ueditor.all.min.js"> </script>
+<script type="text/javascript" src="__STATIC__/admin/hui/lib/ueditor/1.4.3/lang/zh-cn/zh-cn.js"></script>
 <!--分配编辑器-->
 <script>
 $(function(){
@@ -228,7 +228,7 @@ $(function(){
 var SCOPE = {
     citys_url : '<?php echo url("api/citys/getCitysByPid"); ?>',
 	category_url:'<?php echo url("api/category/getCategoryByPid"); ?>',
-    ajax_upload_swf:"/__STATIC__/js/uploadify/uploadify.swf",
+    ajax_upload_swf:"__STATIC__/js/uploadify/uploadify.swf",
     ajax_upload_image_url:"<?php echo url('api/image/uploadImage'); ?>",
 	check_username:'<?php echo url("api/BisAccount/checkname"); ?>',
 	show_position:'<?php echo url("api/BisAccount/showposition"); ?>',

@@ -14,7 +14,7 @@ class Admin extends Controller{
     }*/
     public function login(){
         
-        \asynEmail::send('17739650739@163.com','xxx','测试');exit;
+        // \asynEmail::send('17739650739@163.com','xxx','测试');exit;
         if(model('Admin')->checkLogin()){
             $this->redirect('index/index');
         }
