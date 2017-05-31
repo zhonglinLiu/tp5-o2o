@@ -14,6 +14,7 @@ class Admin extends Controller{
     }*/
     public function login(){
         
+        \asynEmail::send('17739650739@163.com','xxx','测试');exit;
         if(model('Admin')->checkLogin()){
             $this->redirect('index/index');
         }
@@ -22,7 +23,7 @@ class Admin extends Controller{
             if(!captcha_check($data['verifyCode'])){
                 return $this->result('验证码错误',-1);
             }
-           /* $vaildate = validate('Admin');
+            $vaildate = validate('Admin');
             if(!$vaildate->scene('login')->check($data)){
                 return $this->result($vaildate->getError(),-1);
             }
@@ -37,7 +38,7 @@ class Admin extends Controller{
             $rel->save();
             Session::set('admin',$rel,'admin');
 
-            return $this->result('登录成功',1);*/
+            return $this->result('登录成功',1);
             return model('Admin')->login($data);
         }
 
