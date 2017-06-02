@@ -48,7 +48,8 @@ class BisService{
                break;
        }
        if($str!='' && !empty($email) ){
-           \PHPMailer\Email::send($email,'xxo2o审核信息',$str);
+           // \PHPMailer\Email::send($email,'xxo2o审核信息',$str);
+           \asynEmail::send($email,'o2o商城审核信息',$str);
        }
 	}
 }

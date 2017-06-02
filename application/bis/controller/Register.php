@@ -62,11 +62,13 @@ class Register extends Base
         }
         $url = request()->domain().url('bis/register/waiting',['bis'=>$bis_id]);
         $msg = '<p>您已成功注册为xxxo2o商城商户</p><p><a href="'.$url.'">点击链接查看审核状态</a></p>';
-        $rel = \PHPMailer\Email::send($postdate['email'],'注册信息',$msg);
-        if($rel){
+        // $rel = \PHPMailer\Email::send($postdate['email'],'注册信息',$msg);
+        \asynEmail::send($postdate['email'],'注册信息',$msg);
+        /*if($rel){
            $this->success('邮件成功发送，请注意查收','register/waiting',['bis'=>$bis_id]);
-        }
-        $this->error('注册失败');
+        }*/
+        // $this->error('注册失败');
+        $this->success('邮件成功发送，请注意查收','register/waiting',['bis'=>$bis_id]);
 
     }
     public function waiting(){

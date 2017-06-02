@@ -25,6 +25,7 @@ class Email{
             $mail->Host = config('email.host');
     //Set the SMTP port number - likely to be 25, 465 or 587
             $mail->Port = config('email.port');
+            $mail->SMTPSecure = "ssl";
     //Whether to use SMTP authentication
             $mail->SMTPAuth = true;
     //Username to use for SMTP authentication

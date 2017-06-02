@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:63:"F:\study\o2o\public/../application/index\view\detail\index.html";i:1494743608;s:64:"F:\study\o2o\public/../application/index\view\public\header.html";i:1494142426;s:61:"F:\study\o2o\public/../application/index\view\public\nav.html";i:1491751010;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:63:"F:\study\o2o\public/../application/index\view\detail\index.html";i:1494743608;s:64:"F:\study\o2o\public/../application/index\view\public\header.html";i:1496219745;s:61:"F:\study\o2o\public/../application/index\view\public\nav.html";i:1496219750;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,14 +7,14 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title><?php echo $title; ?></title>
     <link rel="shortcut icon" href="">
-    <link rel="stylesheet" href="/__STATIC__/index/css/base.css" />
-    <link rel="stylesheet" href="/__STATIC__/index/css/common.css" />
-    <link rel="stylesheet" href="/__STATIC__/index/css/<?php echo $controller; ?>.css" />
-    <script type="text/javascript" src="/__STATIC__/index/js/html5shiv.js"></script>
-    <script type="text/javascript" src="/__STATIC__/index/js/respond.min.js"></script>
-    <script type="text/javascript" src="/__STATIC__/index/js/jquery-1.11.3.min.js"></script>
-    <script src="/__STATIC__/js/dialog/layer.js"></script>
-    <script src="/__STATIC__/js/dialog.js"></script>
+    <link rel="stylesheet" href="__STATIC__/index/css/base.css" />
+    <link rel="stylesheet" href="__STATIC__/index/css/common.css" />
+    <link rel="stylesheet" href="__STATIC__/index/css/<?php echo $controller; ?>.css" />
+    <script type="text/javascript" src="__STATIC__/index/js/html5shiv.js"></script>
+    <script type="text/javascript" src="__STATIC__/index/js/respond.min.js"></script>
+    <script type="text/javascript" src="__STATIC__/index/js/jquery-1.11.3.min.js"></script>
+    <script src="__STATIC__/js/dialog/layer.js"></script>
+    <script src="__STATIC__/js/dialog.js"></script>
 
 
 </head>
@@ -53,7 +53,7 @@
     </div>
 
     <div class="search">
-        <img src="/__STATIC__/index/image/logo.png" />
+        <img src="__STATIC__/index/image/logo.png" />
         
     </div>
 

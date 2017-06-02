@@ -14,4 +14,6 @@ class Admin extends Validate{
         'edit'=>['username','password','repass','email'],
         'changepass'=>['password','repass'],
     ];
+
+   
 }

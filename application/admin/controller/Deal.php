@@ -1,24 +1,14 @@
 <?php
 namespace app\admin\controller;
 use think\Controller;
+use app\common\service\DealService;
 class Deal extends Base {
     public function index(){
-        $sdata = [];
+        
         $data = input('post.');
-        if(!empty($data['start_time']) && !empty($data['end_time']) && strtotime($data['end_time'])>strtotime($data['start_time'])){
-            $sdata['start_time'] = ['gt',strtotime(strtotime($data['start_time']))];
-            $sdata['end_time'] = ['lt',strtotime($data['end_time'])];
-        }
-        if(!empty($data['name'])){
-            $sdata['name'] = ['like','%'.$data['name'].'%'];
-        }
-        if(!empty($data['category_id'])){
-            $sdata['category_id'] = $data['category_id'];
-        }
-        if(!empty($data['city_id'])){
-            $sdata['city_id'] = $data['city_id'];
-        }
-        $sdata['status'] = 1;
+       
+        $sdata = DealService::instance()->getSearchCond($data);
+        
 
         if(request()->isGet()){
             $deals = model('Deal')->where(['status'=>1])->paginate();
@@ -51,22 +41,8 @@ class Deal extends Base {
         $sdata = [];
         $data = [];
         $data = input('post.');
-        if(!empty($data['start_time']) && !empty($data['end_time']) && strtotime($data['end_time'])>strtotime($data['start_time'])){
-            $sdata['start_time'] = ['gt',strtotime($data['start_time'])];
-            $sdata['end_time'] = ['lt',strtotime($data['end_time'])];
-        }
-        if(!empty($data['name'])){
-            $sdata['name'] = ['like','%'.$data['name'].'%'];
-        }
-        if(!empty($data['category_id'])){
-            $sdata['category_id'] = $data['category_id'];
-        }
-        if(!empty($data['city_id'])){
-            $sdata['city_id'] = $data['city_id'];
-        }
-
-        $sdata['status'] = 1;
-
+       
+        $sdata = DealService::instance()->getSearchCond($data);
         if(request()->isGet()){
             $deals = model('Deal')->where(['status'=>0])->paginate();
         }else{

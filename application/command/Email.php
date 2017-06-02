@@ -28,6 +28,7 @@ class Email extends Command{
         	// $output->writeln($cont['to']);
         }
 
+        return;
         
     }
 }

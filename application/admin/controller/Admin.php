@@ -5,6 +5,7 @@ use think\Session;
 use think\Request;
 use think\Hook;
 use app\admin\controller\Base;
+use app\admin\validate\LoginValidate;
 class Admin extends Controller{
    /* public function _initialize(){
         $user = Session::get('admin','admin');
@@ -15,31 +16,14 @@ class Admin extends Controller{
     public function login(){
         
         // \asynEmail::send('17739650739@163.com','xxx','测试');exit;
+        //\PHPMailer\Email::send('17739650739@163.com','xxo2o审核信息','测试');
         if(model('Admin')->checkLogin()){
             $this->redirect('index/index');
         }
         if(request()->isAjax()){
-            $data = input('post.');
-            if(!captcha_check($data['verifyCode'])){
-                return $this->result('验证码错误',-1);
-            }
-            $vaildate = validate('Admin');
-            if(!$vaildate->scene('login')->check($data)){
-                return $this->result($vaildate->getError(),-1);
-            }
-            $rel = model('Admin')->where(['username'=>$data['username']])->find();
-            if(empty($rel)){
-                return $this->result('该用户不存在',-1);
-            }
-            if(!$rel->password == md5($data['password'].$rel->code)){
-                return $this->result('账号或密码错误',-1);
-            }
-            $rel->last_login_ip = Request::instance()->ip();
-            $rel->save();
-            Session::set('admin',$rel,'admin');
+            (new LoginValidate)->goCheck();
 
             return $this->result('登录成功',1);
-            return model('Admin')->login($data);
         }
 
         return $this->fetch();
