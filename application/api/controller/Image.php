@@ -2,15 +2,15 @@
 namespace app\api\controller;
 use think\Controller;
 use think\Request;
-
+use Oss\ossFile;
 class Image extends Controller{
+
     public function uploadImage(){
-        $file = Request::instance()->file('imgFile');
-        $info = $file->move('upload');
-        if($info && !empty($info)){
-//            echo $info->getPathname();
-            return json_encode(['data'=>'\\'.$info->getPathname(),'msg'=>'success','code'=>1]);
+        $fileInfo = \fileHelper::instance()->file('imgFile');
+        foreach ($fileInfo as $v) {
+            $oss = new ossFile($v['tmp_name']);
+            $oss->setUploadInfo($v);
+            $oss->moves('upload','o2oStatic');
         }
-        return json_encode(['data'=>'','message'=>'上传失败','code'=>-1]);
     }
 }

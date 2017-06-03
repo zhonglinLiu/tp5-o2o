@@ -20,7 +20,8 @@
         "topthink/framework": "^5.0",
         "topthink/think-captcha": "^1.0",
         "zouxiang0639/thinkcms-auth": "^1.1",
-        "sentry/sentry": "^1.6"
+        "sentry/sentry": "^1.6",
+        "aliyuncs/oss-sdk-php": "^2.2"
     },
     "extra": {
         "think-path": "thinkphp"

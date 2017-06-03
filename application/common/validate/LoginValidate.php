@@ -1,9 +1,10 @@
 <?php 
-namespace app\admin\validate;
-use app\common\validate\BaseValidate;
+namespace app\common\validate;
 use think\Session;
 class LoginValidate extends BaseValidate{
-	protected $admin = null;
+	protected $model = null;
+	//用哪个模型区检验登录否
+	protected $modelName = 'Admin';
 	protected $rule = [
 		'verifyCode'=>'require|checkVerifyCode',
 		'username'=>'require|checkUsername',
@@ -20,19 +21,23 @@ class LoginValidate extends BaseValidate{
 	];
 
 	protected function checkPassword($value,$rule='',$message = '', $field = ''){
-		if($this->admin->password == md5($value.$this->admin->code)){
-			$this->admin->save();
-			Session::set('admin',$this->admin,'admin');
+		if($this->model->password == md5($value.$this->model->code)){
+			$this->model->save();
+			$this->setSession();
 			return true;
 		}
 		return false;
 	}
 
 	protected function checkUsername($value,$rule='',$message = '', $field = ''){
-		$this->admin = model('Admin')->where(['username'=>$value])->find();
-		if(empty($this->admin)){
+		$this->model = model($this->modelName)->where(['username'=>$value])->find();
+		if(empty($this->model)){
 			return false;
 		}
 		return true;
+	}
+
+	protected function setSession(){
+		Session::set('admin',$this->model,'admin');
 	}
 }

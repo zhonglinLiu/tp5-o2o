@@ -5,7 +5,8 @@ use think\Session;
 use think\Request;
 use think\Hook;
 use app\admin\controller\Base;
-use app\admin\validate\LoginValidate;
+use app\common\validate\LoginValidate;
+
 class Admin extends Controller{
    /* public function _initialize(){
         $user = Session::get('admin','admin');
@@ -14,8 +15,7 @@ class Admin extends Controller{
         }
     }*/
     public function login(){
-        
-        // \asynEmail::send('17739650739@163.com','xxx','测试');exit;
+        //\asynEmail::send('17739650739@163.com','xxx','测试');exit;
         //\PHPMailer\Email::send('17739650739@163.com','xxo2o审核信息','测试');
         if(model('Admin')->checkLogin()){
             $this->redirect('index/index');

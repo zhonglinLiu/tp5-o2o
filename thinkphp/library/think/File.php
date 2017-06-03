@@ -201,7 +201,6 @@ class File extends SplFileObject
             $this->error = '非法图像文件！';
             return false;
         }
-
         return true;
     }
 

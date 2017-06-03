@@ -19,6 +19,10 @@ class ComposerStaticInitcf8496ab79843065564a7786f28cbbac
             'think\\captcha\\' => 14,
             'think\\' => 6,
         ),
+        'O' => 
+        array (
+            'OSS\\' => 4,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -37,6 +41,10 @@ class ComposerStaticInitcf8496ab79843065564a7786f28cbbac
         'think\\' => 
         array (
             0 => __DIR__ . '/../..' . '/thinkphp/library/think',
+        ),
+        'OSS\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/aliyuncs/oss-sdk-php/src/OSS',
         ),
     );
 
