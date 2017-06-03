@@ -21,6 +21,10 @@ class LoginValidate extends BaseValidate{
 	];
 
 	protected function checkPassword($value,$rule='',$message = '', $field = ''){
+		/*print_r(md5($value.$this->model->code));
+		echo '<br>';
+		print_r($this->model->password);
+		exit;*/
 		if($this->model->password == md5($value.$this->model->code)){
 			$this->model->save();
 			$this->setSession();

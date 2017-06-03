@@ -81,21 +81,11 @@ class Deal extends Base {
         $citys = model('Citys')->getNormalTopCitys(0);
         $cates = model('Category')->getNormalTopCategory(0);
         $deal = model('Deal')->where(['id'=>intval($id)])->find();
-        $locations = explode(',',trim($deal->location_ids,','));
-        $deal['city_id'] = explode(',',trim($deal->city_id,','));
+        $locations = trim($deal->location_ids,',');
+        $deal['city_id'] = trim($deal->city_id,',');
         $stores = [];
-        if(count($locations)>0){
-            foreach ($locations as $v) {
-                $stores[]=model('BisLocation')->field(['name','id'])->where(['id'=>$v])->find();
-            }
-        }
-        if(count($deal['city_id'])>1){
-            foreach ($deal['city_id'] as $v) {
-                $deal['city_name'] = model('Citys')->field(['name'])->where(['id'=>$v])->find();
-            }
-        }else{
-            $deal['city_name'] = '';
-        }
+        $stores=model('BisLocation')->all($locations);
+        $deal['city_name'] = model('Citys')->all($deal['city_id']);
          return $this->fetch('',[
             'deal'=>$deal,'stores'=>$stores,
             'citys'=>$citys,

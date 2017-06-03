@@ -16,7 +16,8 @@ class Manager extends Base{
 	public function add(){
 		if(request()->isAjax()){
 			$data = input('post.');
-			$validate = validate('BisAccount');
+
+			/*$validate = validate('BisAccount');
 			if(!$validate->scene('add')->check($data)){
 				return $this->result($validate->getError(),-1);
 			}
@@ -30,6 +31,10 @@ class Manager extends Base{
 			$model->code = mt_rand(1000,9999);
 			$model->password = md5($data['password'].$model->code);
 			if($model->save()){
+				return $this->result('修改成功',1);
+			}
+			return $this->result('修改失败',-1);*/
+			if(model('BisAccount')->addOrUpdate($data)){
 				return $this->result('修改成功',1);
 			}
 			return $this->result('修改失败',-1);

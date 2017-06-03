@@ -38,17 +38,7 @@ class Admin extends Controller{
             $this->redirect('admin/login');
         }
         if(request()->isPost()){
-            $data = input('post.');
-
-            $validate = validate('Admin');
-            if(!$validate->scene('add')->check($data)){
-                return $this->result($validate->getError(),-1);
-            }
-            $data['code'] = mt_rand(1000,9999);
-            $data['password'] = md5($data['password'].$data['code']);
-            $data['status']=1;
-            $rel = model('Admin')->allowField(true)->save($data);
-            if(empty($rel)){
+            if(!model('Admin')->add()){
                 return $this->result('添加失败',-1);
             }
             return $this->result('添加成功',1);
@@ -57,7 +47,7 @@ class Admin extends Controller{
     }
 
     public function index(){
-        if(model('Admin')->checkLogin()){
+        if(!model('Admin')->checkLogin()){
             $this->redirect('admin/login');
         }
         $sdata = [];
@@ -83,6 +73,7 @@ class Admin extends Controller{
             'name'=>isset($data['name'])?htmlspecialchars($data['name']):'',
             ]);
     }
+    
     public function edit(){
         if(request()->isAjax()){
             $post = input('post.');
@@ -112,19 +103,11 @@ class Admin extends Controller{
 
         if(request()->isAjax()){
             $data = input('post.');
-            $validate = validate('Admin');
-            if($validate->scene('changepass')->check($data)){
-                $admin = model('Admin')->where(['id'=>intval($data['id'])])->find();
-                $admin->password = md5($data['password'].$admin->code);
-                $rel = $admin->save();
-                if(!$rel){
-                    return $this->result('修改失败',-1);
-                }
+            
+            if(model('Admin')->changepass($data)){
                 return $this->result('修改成功',1);
-                
-            }else{
-                return $this->result(-1,$this->getError());
             }
+            return $this->result('修改失败',-1);
         }else{
              $id = input('get.id');
             if(empty($id)){
@@ -144,6 +127,17 @@ class Admin extends Controller{
         }else{
             return $this->result('修改成功',1);
         }
+    }
+
+    public function del($id){
+        if(is_null($id)){
+            return $this->result('参数非法',-1);
+        }
+
+        if(model('Admin')->destroy($id)){
+            return $this->result('修改成功',1);
+        }
+        return $this->result('修改失败',-1);
     }
 
 

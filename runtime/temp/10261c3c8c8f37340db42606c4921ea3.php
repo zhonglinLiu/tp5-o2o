@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:62:"F:\study\o2o\public/../application/admin\view\deal\detail.html";i:1490456923;s:64:"F:\study\o2o\public/../application/admin\view\public\header.html";i:1490000720;s:64:"F:\study\o2o\public/../application/admin\view\public\footer.html";i:1490865711;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:62:"F:\study\o2o\public/../application/admin\view\deal\detail.html";i:1496501374;s:64:"F:\study\o2o\public/../application/admin\view\public\header.html";i:1496219444;s:64:"F:\study\o2o\public/../application/admin\view\public\footer.html";i:1496219445;}*/ ?>
 <!--包含头部文件-->
 <!DOCTYPE HTML>
 <html>
@@ -15,12 +15,12 @@
 <script type="text/javascript" src="lib/respond.min.js"></script>
 <script type="text/javascript" src="lib/PIE_IE678.js"></script>
 <![endif]-->
-<link rel="stylesheet" type="text/css" href="/__STATIC__/admin/hui/static/h-ui/css/H-ui.min.css" />
-<link rel="stylesheet" type="text/css" href="/__STATIC__/admin/hui/static/h-ui.admin/css/H-ui.admin.css" />
-<link rel="stylesheet" type="text/css" href="/__STATIC__/admin/hui/lib/Hui-iconfont/1.0.7/iconfont.css" />
-<link rel="stylesheet" type="text/css" href="/__STATIC__/admin/hui/lib/icheck/icheck.css" />
-<link rel="stylesheet" type="text/css" href="/__STATIC__/admin/hui/static/h-ui.admin/skin/default/skin.css" id="skin" />
-<link rel="stylesheet" type="text/css" href="/__STATIC__/admin/css/common.css" />
+<link rel="stylesheet" type="text/css" href="__STATIC__/admin/hui/static/h-ui/css/H-ui.min.css" />
+<link rel="stylesheet" type="text/css" href="__STATIC__/admin/hui/static/h-ui.admin/css/H-ui.admin.css" />
+<link rel="stylesheet" type="text/css" href="__STATIC__/admin/hui/lib/Hui-iconfont/1.0.7/iconfont.css" />
+<link rel="stylesheet" type="text/css" href="__STATIC__/admin/hui/lib/icheck/icheck.css" />
+<link rel="stylesheet" type="text/css" href="__STATIC__/admin/hui/static/h-ui.admin/skin/default/skin.css" id="skin" />
+<link rel="stylesheet" type="text/css" href="__STATIC__/admin/css/common.css" />
 <!--[if IE 6]>
 <script type="text/javascript" src="http://lib.h-ui.net/DD_belatedPNG_0.0.8a-min.js" ></script>
 <script>DD_belatedPNG.fix('*');</script>
@@ -100,7 +100,7 @@
 			<label class="form-label col-xs-4 col-sm-2">团购开始时间：</label>
 			<div class="formControls col-xs-8 col-sm-3">
 				
-				<input type="text" name="start_time" class="input-text" id="countTimestart" onfocus="selecttime(1)" value="<?php echo date('Y-m-d h:i',$deal['start_time']); ?>"  >
+				<input type="text" name="start_time" class="input-text" id="countTimestart" onfocus="selecttime(1)" value="<?php echo $deal['start_time']; ?>"  >
 
 			</div>
 		</div>
@@ -108,7 +108,7 @@
 			<label class="form-label col-xs-4 col-sm-2">团购结束时间:</label>
 			<div class="formControls col-xs-8 col-sm-3">
 				
-				<input type="text" name="end_time" class="input-text" id="countTimestart" onfocus="selecttime(1)" value="<?php echo date('Y-m-d h:i',$deal['end_time']); ?>"  >
+				<input type="text" name="end_time" class="input-text" id="countTimestart" onfocus="selecttime(1)" value="<?php echo $deal['end_time']; ?>"  >
 			</div>
 		</div>
 		<div class="row cl">
@@ -133,14 +133,14 @@
 			<label class="form-label col-xs-4 col-sm-2">消费券生效时间：</label>
 			<div class="formControls col-xs-8 col-sm-3">
 				
-				<input type="text" name="coupons_begin_time" class="input-text" id="countTimestart" onfocus="selecttime(1)" value="<?php echo date('Y-m-d h:i',$deal['coupons_begin_time']); ?>"  >
+				<input type="text" name="coupons_begin_time" class="input-text" id="countTimestart" onfocus="selecttime(1)" value="<?php echo $deal['coupons_begin_time']; ?>"  >
 			</div>
 		</div>
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-2">消费券结束时间:</label>
 			<div class="formControls col-xs-8 col-sm-3">
 				
-				<input type="text" name="coupons_end_time" class="input-text" id="countTimestart" onfocus="selecttime(1)" value="<?php echo date('Y-m-d h:i',$deal['coupons_end_time']); ?>"  >
+				<input type="text" name="coupons_end_time" class="input-text" id="countTimestart" onfocus="selecttime(1)" value="<?php echo $deal['coupons_end_time']; ?>"  >
 			</div>
 		</div>
 		<div class="row cl">
@@ -170,22 +170,22 @@ var SCOPE = {
 
 </script>
 <!--包含头部文件-->
-<script type="text/javascript" src="/__STATIC__/admin/hui/lib/jquery/1.9.1/jquery.min.js"></script>
-<script type="text/javascript" src="/__STATIC__/admin/hui/lib/layer/2.1/layer.js"></script>
-<script type="text/javascript" src="/__STATIC__/admin/hui/lib/My97DatePicker/WdatePicker.js"></script>
-<script type="text/javascript" src="/__STATIC__/admin/hui/lib/jquery.validation/1.14.0/jquery.validate.min.js"></script>
-<script type="text/javascript" src="/__STATIC__/admin/hui/lib/jquery.validation/1.14.0/validate-methods.js"></script>
-<script type="text/javascript" src="/__STATIC__/admin/hui/lib/jquery.validation/1.14.0/messages_zh.min.js"></script>
-<script type="text/javascript" src="/__STATIC__/admin/hui/static/h-ui/js/H-ui.js"></script>
-<script type="text/javascript" src="/__STATIC__/admin/hui/static/h-ui.admin/js/H-ui.admin.js"></script>
-<script type="text/javascript" src="/__STATIC__/js/common.js"></script>
-<script type="text/javascript" src="/__STATIC__/js/uploadify/jquery.uploadify.js"></script>
-<script type="text/javascript" src="/__STATIC__/js/image.js"></script>
-<script type="text/javascript" src="/__STATIC__/js/dialog.js"></script>
-<script type="text/javascript" src="/__STATIC__/admin/hui/lib/ueditor/1.4.3/ueditor.config.js"></script>
-<script type="text/javascript" src="/__STATIC__/admin/hui/lib/ueditor/1.4.3/ueditor.all.min.js"> </script>
-<script type="text/javascript" src="/__STATIC__/admin/hui/lib/ueditor/1.4.3/lang/zh-cn/zh-cn.js"></script>
-<script src="/__STATIC__/admin/hui/lib/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="__STATIC__/admin/hui/lib/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="__STATIC__/admin/hui/lib/layer/2.1/layer.js"></script>
+<script type="text/javascript" src="__STATIC__/admin/hui/lib/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="__STATIC__/admin/hui/lib/jquery.validation/1.14.0/jquery.validate.min.js"></script>
+<script type="text/javascript" src="__STATIC__/admin/hui/lib/jquery.validation/1.14.0/validate-methods.js"></script>
+<script type="text/javascript" src="__STATIC__/admin/hui/lib/jquery.validation/1.14.0/messages_zh.min.js"></script>
+<script type="text/javascript" src="__STATIC__/admin/hui/static/h-ui/js/H-ui.js"></script>
+<script type="text/javascript" src="__STATIC__/admin/hui/static/h-ui.admin/js/H-ui.admin.js"></script>
+<script type="text/javascript" src="__STATIC__/js/common.js"></script>
+<script type="text/javascript" src="__STATIC__/js/uploadify/jquery.uploadify.js"></script>
+<script type="text/javascript" src="__STATIC__/js/image.js"></script>
+<script type="text/javascript" src="__STATIC__/js/dialog.js"></script>
+<script type="text/javascript" src="__STATIC__/admin/hui/lib/ueditor/1.4.3/ueditor.config.js"></script>
+<script type="text/javascript" src="__STATIC__/admin/hui/lib/ueditor/1.4.3/ueditor.all.min.js"> </script>
+<script type="text/javascript" src="__STATIC__/admin/hui/lib/ueditor/1.4.3/lang/zh-cn/zh-cn.js"></script>
+<script src="__STATIC__/admin/hui/lib/My97DatePicker/WdatePicker.js"></script>
 <script>
 $(function(){
 	var ue = UE.getEditor('editor');
@@ -194,7 +194,7 @@ $(function(){
 var SCOPE = {
     citys_url : '<?php echo url("api/citys/getCitysByPid"); ?>',
     category_url:'<?php echo url("api/category/getCategoryByPid"); ?>',
-    ajax_upload_swf:"/__STATIC__/js/uploadify/uploadify.swf",
+    ajax_upload_swf:"__STATIC__/js/uploadify/uploadify.swf",
     ajax_upload_image_url:"<?php echo url('api/image/uploadImage'); ?>",
     check_username:'<?php echo url("api/BisAccount/checkname"); ?>',
     show_position:'<?php echo url("api/BisAccount/showposition"); ?>',

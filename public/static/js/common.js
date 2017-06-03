@@ -171,7 +171,7 @@ $('#liu-submit').click(function () {
 		}else{
 			dialog.success(d.data,SCOPE.jump_url);
 		}
-    })
+    },'JSON');
 })
 
 

@@ -98,3 +98,11 @@ function array_to_object($arr) {
     return (object)$arr;
 }
 
+function show($msg,$code){
+    $data = [
+        'data'=>$msg,
+        'code'=>$code
+    ];
+    exit(json_encode($data));
+}
+
