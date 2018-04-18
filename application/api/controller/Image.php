@@ -10,7 +10,8 @@ class Image extends Controller{
         foreach ($fileInfo as $v) {
             $oss = new ossFile($v['tmp_name']);
             $oss->setUploadInfo($v);
-            $oss->moves('upload','o2oStatic');
+            $fileObj = $oss->moves('upload','o2oStatic');
         }
+        return json(['data'=>'/upload/'.$fileObj->getSaveName()]);
     }
 }

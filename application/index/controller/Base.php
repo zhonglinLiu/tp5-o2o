@@ -30,7 +30,7 @@ class Base extends Controller{
         if(Cache::has('citys')){
             $citys = Cache::get('citys',3600);
         }else{
-            $citys = model('Citys')->field(['id','name','is_default'])->where(['status'=>1])->select();
+            $citys = model('Citys')->field(['id','name','is_default'])->where(['status'=>1,'parent_id'=>0])->select();
             Cache::set('citys',$citys);
         }
         $this->getDefaultCity($citys);
@@ -55,14 +55,11 @@ class Base extends Controller{
         if(Session::get('defaultCity','o2o') && !input('get.cityName')){
             $cityName = Session::get('defaultCity','o2o');
             $city_id = Session::get('city_id','o2o');
-
         }else{
             $cityName = input('get.cityName',$defaultCity,'trim');
             $city_id = input('get.city_id',$city_id,'trim');
             Session::set('defaultCity',$cityName,'o2o');
             Session::set('city_id',$city_id,'o2o');
-            
-
         }
         $this->city = $cityName;
         $this->city_id = $city_id;

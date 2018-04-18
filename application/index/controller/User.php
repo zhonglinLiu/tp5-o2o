@@ -54,6 +54,10 @@ class User extends Controller{
 		return $this->fetch();
 	}
 
+    public function index(){
+        $this->redirect('/');
+    }
+
 	public function logout(){
 	    Session::delete('user','o2o');
 	    $this->redirect('user/login');

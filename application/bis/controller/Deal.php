@@ -53,7 +53,7 @@ class Deal extends Base {
         $locations = explode(',',trim($deal->location_ids,','));
         $deal['city_id'] = explode(',',trim($deal->city_id,','));
         $stores = [];
-
+        var_dump($deal['status']);exit;
         return $this->fetch('',[
             'deal'=>$deal,'stores'=>$stores,
             'citys'=>$citys,
